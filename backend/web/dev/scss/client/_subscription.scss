@@ -1,0 +1,56 @@
+.end-date-datepicker-wrapper {
+    @include max-width-767 {
+        float: right;
+    }
+    .date{
+        display: inline-block;
+        float: left;
+        width: auto;
+        @include max-width-1240 {
+            width: 100%;
+        }
+        .input-group-addon {
+            display: none;
+        }
+    }
+    button {
+        height: 40px;
+        margin-left: 12px;
+        padding: 0;
+        width: 40px;
+        @include max-width-1240 {
+            margin: 16px auto 0;
+            width: 100%;
+        }
+        .fa {
+            margin: 0;
+        }
+    }
+}
+
+.subscription-end-date-range-picker-wrapper {
+    .input-daterange {
+        display: flex;
+    }
+    .datepicker-range {
+        display: flex;
+        flex-direction: column;
+        @include max-width-425 {
+            margin-top: 16px;
+        }
+    }
+    .input-group-addon {
+        align-items: center;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        margin: 0;
+        width: 40px;
+    }
+}
+
+.subscription-status {
+    @include max-width-767 {
+        float: right;
+    }
+}

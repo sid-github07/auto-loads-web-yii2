@@ -1,0 +1,65 @@
+.purchase-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.order-payment {
+    margin: 6px 0 32px 0;
+}
+
+.order-payment-info {
+    text-align: justify;
+    line-height: 22px;
+    @include font-size(14);
+}
+
+.payment-selection-buttons {
+    display: block;
+    width: 100%;
+}
+
+.payment-selection {
+    @include font-size(48);
+    align-items: center;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    max-width: 240px;
+    background: $white;
+    border: 1px solid $alto2;
+    color: $secondarytext;
+    &:hover, &:focus {
+        color: $secondarytext;
+        text-decoration: none;
+    }
+    img {
+        position: relative;
+    }
+}
+
+.paysera {
+    img {
+        width: 115px;
+    }
+}
+
+.paypal {
+    img {
+        width: 105px;
+        margin-left: 5px;
+    }
+}
+
+.primary-button.pay-btn {
+    @include font-size(14);
+    display: block;
+    max-width: 240px;
+    margin: 0 auto 32px auto;
+    padding: 4px;
+    text-align: center;
+    &:hover, &:focus {
+        color: $white;
+        text-decoration: none;
+    }
+}

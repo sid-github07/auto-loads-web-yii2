@@ -1,0 +1,123 @@
+.subscription-reminder {
+    @include font-size(15);
+    align-items: center;
+    background: $white;
+    box-shadow: $navbarshadow;
+    color: $secondarytext;
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    margin-bottom: 55px;
+    min-height: 78px;
+    justify-content: space-between;
+    padding: 15px 50px 15px 60px;
+    position: relative;
+    width: 100%;
+    @include max-width-767 {
+        flex-direction: column;
+        padding: 15px 25px;
+    }
+    @include max-width-425 {
+        padding: 15px;
+    }
+}
+
+.announcement {
+    max-height: 100%;
+    @include font-size(15);
+    background: $white;
+    box-shadow: $navbarshadow;
+    color: $secondarytext;
+    font-weight: 600;
+    margin-bottom: 55px;
+    justify-content: space-between;
+    padding: 15px 50px 15px 60px;
+    position: relative;
+    width: 100%;
+    overflow-y: auto;
+    border: 1px solid $yelloworange;
+    @include max-width-767 {
+        flex-direction: column;
+        padding: 15px 25px;
+    }
+    @include max-width-425 {
+        padding: 15px;
+    }
+}
+
+.pull-down {
+    margin-top: 15%;
+}
+.reminder-icon {
+    @include font-size(24);
+    color: $selectiveyellow;
+    left: 15px;
+    margin-top: -14px;
+    position: absolute;
+    top: 50%;
+    @include max-width-767 {
+        @include font-size(42);
+        display: inline-block;
+        left: 0;
+        margin: 15px auto 0px auto;
+        position: relative;
+        top: 0;
+    }
+}
+
+.reminder-message {
+    text-align: justify;
+    @include max-width-767 {
+        margin-top: 25px;
+        text-align: center;
+    }
+}
+
+.reminder-btn-wrapper {
+    position: relative;
+    white-space: nowrap;
+}
+
+.reminder-action-btn {
+    @include font-size(14);
+    border: 1px solid $selectiveyellow;
+    color: $selectiveyellow;
+    font-weight: 600;
+    margin-left: 25px;
+    padding: 7px 12px;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    &:hover, &:focus {
+        background: $selectiveyellow;
+        color: $white;
+        text-decoration: none;
+    }
+    @include max-width-767 {
+        display: inline-block;
+        margin: 20px auto 15px auto;
+    }
+}
+
+.close-subscription-reminder {
+    @include font-size(18);
+    color: $primarytext;
+    height: 35px;
+    line-height: 35px;
+    opacity: .4;
+    outline: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 35px;
+    &:hover, &:focus {
+        color: $primarytext;
+        opacity: .8;
+        text-decoration: none;
+    }
+}
+
+
+.border-color-orange {
+    border-color: $yelloworange;
+}

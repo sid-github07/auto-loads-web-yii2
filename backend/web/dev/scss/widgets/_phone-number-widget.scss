@@ -1,0 +1,58 @@
+.input-group {
+    outline: 0;
+    width: 100%;
+    border-collapse: none;
+    z-index: 1;
+    .input-group-btn {
+        width: 100%;
+        display: block;
+    }
+}
+
+.form-control.phone-number-flag {
+    width: 15%;
+    display: block;
+    height: initial;
+    @include max-width-1240 {
+        width: 30%;
+    }
+    @include max-width-991 {
+        width: 15%;
+    }
+    @include max-width-425 {
+        width: 30%;
+    }
+}  
+
+.form-control.phone-number-input {
+    display: block;
+    width: 85%;
+    position: relative;
+    @include max-width-1240 {
+        width: 70%;
+    }
+    @include max-width-991 {
+        width: 85%;
+    }
+    @include max-width-425 {
+        width: 70%;
+    }
+}
+
+.input-group-btn.open {
+    .form-control.phone-number-flag {
+        outline: 0;
+    }
+    .phone-number-list-dropdown {
+        overflow-x: hidden;
+        height: 220px;
+        top: 40px;
+        width: 100%;
+        .phone-number-list-dropdown-item {
+            a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    } 
+}

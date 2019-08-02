@@ -1,0 +1,11 @@
+.current-credits {
+    @include font-size(15);
+    font-weight: 600;
+}
+
+.your-subscription-list {
+    color: $secondarytext;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 15px;
+}

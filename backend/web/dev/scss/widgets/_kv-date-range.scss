@@ -1,0 +1,172 @@
+//Input style
+.input-group.input-daterange {
+    @include max-width-425 {
+        display: block;
+    }
+    div {
+        border: none;
+    }
+    .kv-container-to {
+        .form-control {
+            border-radius: 0px !important;
+        }
+    }
+    .input-group-addon {
+        border-left: 0px;
+        @include max-width-425 {
+            display: inline-block;
+            height: 38px;
+            width: 100%;
+            margin: auto;
+            border-left: 1px solid $alto;
+            border-right: 1px solid $alto;
+            border-top: none;
+            border-bottom: none;
+            line-height: 32px;
+        }
+    }
+}
+
+.input-daterange {
+    input {
+        &:first-child, &:last-child {
+            border-radius: 0px;
+        }
+    }
+}
+
+.datepicker-days {
+    th {
+        padding: 8px;
+    }
+}
+//Datepicker style
+.datepicker {
+    //Heading
+    table {
+        border-collapse: separate;
+    }
+    @include font-size(14);
+    color: $primarytext;
+    padding: 0px;
+    th.prev, th.next {
+        background-color: $cerulean;
+        border-radius: 0px;
+        color: $cerulean;
+        height: 42px;
+        width: 42px;
+        border-radius: 0px;
+        @include font-size(20);
+        &:after {
+            font-family: $fontawesome;
+            @include font-size(16);
+            color: $white;
+            opacity: 0.8;
+            position: relative;
+            right: 6px;
+        }
+        &:hover, &:focus {
+            background-color: $cerulean !important;
+            color: $cerulean;
+            &:after {
+                opacity: 1;
+            }
+        }    
+    }
+    th.prev {
+        &:after {
+            content: '\f053';
+        }
+    }
+    th.next {
+        &:after {
+            content: '\f054';
+        }
+    }
+    .datepicker-switch {
+        background-color: $cerulean;
+        color: $primarytextalt;
+        border-radius: 0px;
+        @include font-size(15);
+        &:hover, &:focus {
+            background-color: $cerulean !important;
+            color: $white;
+        }
+    }
+    //Days
+    .dow {
+        width: 42px;
+        height: 42px;
+        color: $secondarytext;
+    }
+    .day {
+        position: relative;
+        width: 42px;
+        height: 42px;
+        font-weight: 600;
+        color: $primarytext;
+        &:hover, &:focus {
+            background: $alabaster5 !important;
+            border-radius: 0px;
+            border: none;
+        }
+    }
+    .old.day {
+        color: $disabledtext;
+        &:hover, &:focus {
+            color: $primarytext;
+        }
+    }
+    .new.day {
+        color: $secondarytext;
+        &:hover, &:focus {
+            color: $primarytext;
+        }
+    }
+    .active.day {
+        background: $sunshade !important;
+        color: $white;
+        border-radius: 0px;
+        &:hover, &:focus {
+            background: $sunshade !important;
+            color: $white;
+        }
+    }
+    .selected.day {
+        background: $sunshade !important;
+        color: $white;
+        border-radius: 0px;
+        &:hover, &:focus {
+            background: $sunshade !important;
+            color: $white;
+        }
+    }
+    .range.day {
+        background: $alabaster3 !important;
+        color: $primarytext;
+        border-radius: 0px;
+        &:hover, &:focus {
+            background: $alabaster5 !important;
+            color: $primarytext;
+        }
+    }
+    //Months, Years
+    .month, .year, .decade, .century {
+        font-weight: 600;
+        color: $primarytext;
+        &:hover, &:focus {
+            background: $alabaster5 !important;
+            border-radius: 0px;
+            border: none;
+        }
+    }
+    .active.month, .active.year, .active.decade, .active.century {
+        background: $sunshade !important;
+        color: $white;
+        border-radius: 0px;
+        &:hover, &:focus {
+            background: $sunshade !important;
+            color: $white;
+        }
+    }
+}

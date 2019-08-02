@@ -1,0 +1,18 @@
+.intl-tel-input {
+    width: 100%;
+    .flag-container {
+        width: 100%;
+    }
+    .country-list {
+        @include font-size(14);
+        font-weight: normal;
+        width: 100%;
+    }
+}
+
+.iti-mobile {
+    .intl-tel-input.iti-container {
+        top: 70px;
+        left: 0px;
+    }
+}

@@ -1,0 +1,25 @@
+.breadcrumb {
+    background: transparent;
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    font-weight: 500;
+    li {
+        a {
+            color: $secondarytextalt;
+        }
+    }
+    li.active {
+        &:before {
+            color: $primarytextalt;
+        }
+        color: $primarytextalt;
+        a {
+            &:before {
+                color: $primarytextalt;
+            }
+            color: $primarytextalt;
+        }
+    }
+}

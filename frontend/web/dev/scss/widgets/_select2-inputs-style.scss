@@ -1,0 +1,104 @@
+.select2-container--krajee {
+    .select2-selection {
+        border-radius: 0px;
+        min-height: 40px;
+    }
+    .select2-selection--single {
+        @include font-size(16);
+        font-weight: normal;
+        line-height: 26px;
+        padding: 6px 40px 6px 12px;
+        .select2-selection__arrow {
+            display: none;
+        }
+        .select2-selection__clear {
+            position: absolute;
+            top: 7px;
+            right: 10px;
+        }
+    }
+    .select2-selection__clear {
+        @include font-size(30);
+        right: 10px;
+        top: 0;
+    }
+    .select2-selection--multiple {
+        &:after {
+            @include font-size(14);
+            color: $secondarytext;
+            content:"\f0d7";
+            font-family: $fontawesome;
+            margin-top: -5px;
+            position: absolute;
+            right: 12px;
+            top: 50%;
+        }
+        .select2-selection__rendered {
+            @include font-size(16);
+            font-weight: normal;
+            line-height: 38px;
+            padding-right: 40px;
+        }
+        .select2-selection__choice {
+            @include font-size(16);
+            background-color: $alabaster2;
+            border-radius: 0px;
+            border: 1px solid $alto2;
+            line-height: 23px;
+            padding: 2px 10px;
+            @include max-width-767 {
+                margin-left: 10px;
+                padding: 7px 10px 7px 20px;
+                width: 100%;
+            }
+        }
+        .select2-selection__choice__remove {
+            @include font-size(24);
+            color: $secondarytext;
+            margin: 0px 0px 0px 5px;
+        }
+    }
+    .select2-dropdown {
+        border-color: $treepoppy;
+        overflow: visible;
+    }
+    li.select2-results__option {
+        @include font-size(14);
+        background-color: $eggsour;
+        color: $secondarytext;
+        font-weight: normal;
+    }
+    .select2-search--dropdown {
+        .select2-search__field {
+            background-position-y: 11px;
+            border-radius: 0px;
+            color: $primarytext;
+            font-weight: normal;
+        }
+    }
+}
+
+.select2-container--krajee.select2-container--open {
+    .select2-selection {
+        border-color: $treepoppy;
+        box-shadow: $inputhighlight;
+    }
+}
+
+.select2-dropdown {
+    border-radius: 0px;
+}
+
+.select2.select2-container.select2-container--krajee {
+    line-height: 10px;
+}
+
+.select2__icon-text {
+    position: relative;
+}
+
+.select2__icon {
+    position: absolute;
+    top: -2px;
+    right: 0;
+}

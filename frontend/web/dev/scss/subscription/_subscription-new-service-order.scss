@@ -1,0 +1,73 @@
+.services-container {
+    margin: 0 auto;
+}
+
+.service-item {
+    background-color: $white;
+    border: 1px solid $alto2;
+    color: $primarytext;
+    font-weight: 700;
+    min-height: 230px;
+    margin: 0 auto 30px auto;
+    padding: 15px 25px;
+    position: relative;
+    text-align: center;
+}
+
+.service-title {
+    line-height: 26px;
+    padding-top: 12px;
+}
+
+.service-price {
+    @include font-size(32);
+    margin: 20px 0 5px 0;
+}
+
+.service-price-per-month {
+    @include font-size(14);
+    display: inline-block;
+    width: 100%;
+}
+
+.service-euro-credits {
+    text-align: left;
+    margin-left: 5px;
+    line-height: 26px;
+}
+
+.golden-credits {
+    font-size: 15px;
+}
+
+.golden-price {
+    color: $yelloworange;
+}
+
+.service-info {
+    margin: 20px auto 5px auto;
+    min-height: 90px;
+    width: 230px;
+}
+
+.service-info-golden {
+    margin-top: 20px;
+    min-height: 45px;
+}
+
+.service-info-line {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.primary-button.select-service {
+    padding: 0px 25px;
+    margin: 15px auto;
+    @include max-width-767 {
+        width: auto;
+    }
+    @include max-width-425 {
+        width: 100%;
+    }
+}

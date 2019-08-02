@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+//Window sizes
+$size-1660: 1660px;
+$size-1310: 1310px;
+$size-1150: 1150px;
+$size-1002: 1002px;
+$size-992: 992px;
+$size-767: 767px;
+$size-425: 425px;
+$size-375: 375px;
+
+@mixin min-width-1660 {
+    @media (min-width: #{$size-1660})  {
+        @content;
+    }
+}
+
+@mixin max-width-1310 {
+    @media (max-width: #{$size-1310})  {
+        @content;
+    }
+}
+
+@mixin max-width-1150 {
+    @media (max-width: #{$size-1150})  {
+        @content;
+    }
+}
+
+@mixin max-width-1002 {
+    @media (max-width: #{$size-1002})  {
+        @content;
+    }
+}
+
+@mixin min-width-992 {
+    @media (min-width: #{$size-992})  {
+        @content;
+    }
+}
+
+@mixin max-width-767 {
+    @media (max-width: #{$size-767})  {
+        @content;
+    }
+}
+
+@mixin max-width-425 {
+    @media (max-width: #{$size-425})  {
+        @content;
+    }
+}
+
+@mixin max-width-375 {
+    @media (max-width: #{$size-375})  {
+        @content;
+    }
+}

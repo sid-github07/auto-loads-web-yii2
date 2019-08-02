@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/media-queries';
+@import 'bills/list';
+@import 'client/company-info';
+@import 'client/documents';
+@import 'client/index';
+@import 'client/subscription';
+@import 'client/user';
+@import 'layout/main';
+@import 'load/index';
+@import 'modules/breadcrumbs';
+@import 'modules/buttons';
+@import 'modules/checkbox';
+@import 'modules/form';
+@import 'modules/text';
+@import 'site/error';
+@import 'site/login';
+@import 'widgets/alert';
+@import 'widgets/dosamigos-datepicker';
+@import 'widgets/gridview';
+@import 'widgets/kv-date-range';
+@import 'widgets/modal';
+@import 'widgets/phone-number-widget';
+@import 'widgets/phone-widget';
+@import 'widgets/select2';
+@import 'widgets/selectize';
+@import 'widgets/tabs';
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-family: $opensans;
+    background: $alabaster;
+}
+
+.wrap {
+    background: $alabaster;
+    position: relative;
+    top: 60px;
+    width: 100%;
+    max-width: 1160px;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    @include max-width-1240 {
+        max-width: 1100px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    @include max-width-767 {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.wrap-login {
+    height: 100%;
+    width: 100%;
+    background: $cerulean;
+    @include max-height-500 {
+        height: auto;
+    }
+}
+
+.wrap-center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.adv-icon {
+    margin-top: 15px;
+    position: relative;
+    display: inline-block;;
+    height: 100%;
+    width: 100%;
+    font-size: 4em;
+}
+
+.load-cars {
+    display: inline;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
+
+.announcement-text:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.announcement-text {
+    color: #df5320;
+}
+.car-transporters-grid-view {
+    margin-top: 40px;
+}
+
+.red-row {
+    background: #d0141426 !important;
+}
+
+.span-block {
+    width: 30px;
+    height: 15px;
+    display: inline-block;
+    border: 1px solid #5a7b8c;
+}
+.color-desc {
+    margin-left: 10px;
+    margin-bottom: 0;
+    display:inline-block;;
+}
+.adv-open-contacts-cost {
+    background-color: #eee;
+    padding: 8px 15px;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}

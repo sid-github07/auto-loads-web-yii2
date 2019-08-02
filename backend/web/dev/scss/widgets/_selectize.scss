@@ -1,0 +1,35 @@
+.selectize-input {
+    border-radius: 0px;
+    border: 1px solid $alto;
+    box-shadow: none;
+    outline: none;
+    padding-left: 0px;
+    text-indent: 10px;
+    @include font-size(14);
+    min-height: 40px;
+    line-height: 26px;
+    .item {
+        text-indent: 0px;
+    }
+}
+
+.selectize-input.dropdown-active {
+    border-radius: 0px;
+}
+
+.selectize-control.single {
+    .selectize-input {
+        &:after {
+            right: 10px;
+            border-width: 5px 4px 0px 4px;
+            border-color: rgba(0, 0, 0, 0.54) transparent transparent transparent;
+        }
+    }
+    .selectize-input.input-active {
+        &:after {
+            right: 10px;
+            border-width: 0px 4px 5px 4px;
+            border-color: transparent transparent rgba(0, 0, 0, 0.54) transparent;
+        }
+    }
+}

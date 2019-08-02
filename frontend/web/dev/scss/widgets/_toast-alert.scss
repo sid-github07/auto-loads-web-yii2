@@ -1,0 +1,64 @@
+.alert-container.login {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.alert-container, .alert-container-index {
+    margin-bottom: 32px;
+    #toast-container.toast-top-center {
+        top: 0;
+        left: 0;
+        position: relative;
+        margin: auto;
+        z-index: 1;
+        .toast {
+            margin: 0 0 16px 0;
+            width: 100%;
+            .toast-close-button {
+                @include font-size(30);
+                font-weight: normal;
+                height: 0px;
+                line-height: 0;
+                margin-top: -2px;
+                outline: none;
+                position: absolute;
+                right: 35px;
+                text-indent: 0px;
+                top: 50%;
+                width: 0px;
+                &:hover, &:focus {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.alert-container-index {
+    width: 100%;
+    #toast-container.toast-top-center {
+        margin-bottom: 30px;
+    }
+}
+
+.toast-message {
+    @include font-size (14);
+    padding-left: 3px;
+    padding-right: 40px;
+    a {
+        color: $white;
+        &:hover {
+            color: $alto2;
+            text-decoration: none;
+        }
+    }
+    label {
+        color: $white;
+    }
+}
+
+.activate-announce-alert {
+    .fa {
+        margin-right: 7px;
+    }
+}

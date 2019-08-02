@@ -1,0 +1,90 @@
+.your-cart-title {
+    margin-bottom: 18px;
+}
+
+.selected-service-list-container {
+    display: inline-block;
+    width: 100%;
+    font-weight: 600;
+    padding: 15px 0px;
+    border-top: 2px solid $alto2;
+    border-bottom: 2px solid $alto2;
+}
+
+.selected-service-title {
+    @include font-size(16);
+    margin-left: 12px;
+    color: $primarytext;
+}
+
+.service-price-and-remove {
+    display: inline-block;
+    float: right;
+    @include max-width-767 {
+        display: block;
+        float: none;
+    }
+}
+
+.selected-service-price {
+    @include font-size(16);
+    display: inline-block;
+    color: $secondarytext;
+    @include max-width-767 {
+        margin-left: 12px;
+    }
+}
+
+.remove-from-cart {
+    display: inline-block;
+    margin: 0 12px 0 24px;
+    @include max-width-767 {
+        float: right;
+        margin-top: -15px;
+    }
+    @include max-width-425 {
+        display: block;
+        float: none;
+        margin: 10px 12px;
+    }
+}
+
+.secondary-button.remove-from-cart-btn {
+    min-width: 150px;
+    background: $gallery;
+    color: $secondarytext;
+    &:hover, &:focus {
+        background: $gallery2;
+        color: $primarytext;
+        text-decoration: none;
+    }
+    .fa {
+        @include font-size(18);
+    }
+}
+
+.selected-service-full-price {
+    @include font-size(18);
+    color: $primarytext;
+    display: block;
+    font-weight: 700;
+    margin: 12px 12px 0 0;
+    text-align: right;
+    @include max-width-767 {
+        text-align: left;
+    }
+}
+
+.primary-button.cancel-purchase {
+    margin: 24px 0 12px 0;
+    padding: 0px 32px;
+}
+
+.primary-button.purchase {
+    float: right;
+    margin: 24px 0 12px 0;
+    padding: 0px 55px;
+    @include max-width-767 {
+        margin: 12px 0;
+    }
+}

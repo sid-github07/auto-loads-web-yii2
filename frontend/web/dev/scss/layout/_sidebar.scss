@@ -1,0 +1,139 @@
+.sidebar-wrapper.toggled {
+    width: $sidebarwidth;
+    left: $sidebarwidth;
+}
+
+.sidebar-wrapper {
+    background: $white;
+    box-shadow: $sidebarshadow;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    transition: all .35s ease-in-out;
+    width: 0px;
+    z-index: 1041;
+    margin-left: -$sidebarwidth;
+}
+
+.close-button-wrapper {
+    border-bottom: 1px solid $alto2;
+    height: $sidebarclosebtnwrapper;
+    position: relative;
+    text-align: right;
+}
+
+.close-sidebar {
+    @include font-size(28);
+    color: $secondarytext;
+    outline: 0;
+    position: relative;
+    right: 20px;
+    top: 16px;
+    &:hover, &:focus {
+        color: $primarytext;
+        text-decoration: none;
+    }
+}
+
+.sidebar-items {
+    li {
+        a {
+            border-bottom: 1px solid $alto2;
+            color: $primarytext;
+            font-weight: normal;
+            padding: 12px 15px 12px 25px;
+            position: relative;
+            &:hover, &:focus {
+                background: $alabaster2;
+                color: $treepoppy;
+                &:before {
+                    content: '';
+                    background: $treepoppy;
+                    height: 100%;
+                    width: 2px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+            .fa {
+                @include font-size(18);
+                margin-right: 15px;
+            }
+            .fa-car {
+                @include font-size(16);
+            }
+        }
+    }
+    .main-action-item {
+        a {
+            color: $secondarytext;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+    .highlighted {
+        background: none;
+        border: none !important;
+        a {
+            color: $curiousblue;
+            font-weight: 600;
+        }
+    }
+    .orange-text {
+        a {
+            color: $yelloworange;
+        }
+    }
+    li.disabled {
+        a {
+            color: $disabledtext;
+            &:hover, &:focus {
+                color: $disabledtext;
+                &:before {
+                    background: none;
+                }
+            }
+        }
+    }
+    .active {
+        a {
+            color: $treepoppy;
+            background: $alabaster2;
+            &:before {
+                content: '';
+                background: $treepoppy;
+                height: 100%;
+                width: 2px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            &:hover, &:focus {
+                color: $treepoppy;
+                background: $alabaster2;
+                &:before {
+                    content: '';
+                    background: $treepoppy;
+                    height: 100%;
+                    width: 2px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+.sidebar-items-category {
+    margin-top: 15px;
+    padding: 12px 15px 12px 25px;
+    text-transform: uppercase;
+    @include font-size(12);
+    font-weight: 700;
+    border-bottom: 1px solid $alto2;
+    color: $disabledtext
+}

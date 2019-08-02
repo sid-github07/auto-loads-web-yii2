@@ -1,0 +1,341 @@
+.menu-collapse-btn {
+    color: $primarytext;
+    &:hover, &:focus {
+        color: $primarytext;
+    }
+}
+
+.menu-collapse-btn-wrapper {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.menu-btn {
+    a {
+        background: $olivine;
+        background: $littleleaf;
+        border-radius: 5px;
+        color: $white;
+        margin: 12px 5px;
+        padding: 7px 12px;
+        &:hover, &:focus {
+            background: $olivine2;
+            background: $littleleaf2;
+        }
+        @include max-width-1002 {
+            background: $white;
+            color: $primarytext;
+            margin: 0px;
+            &:hover, &:focus {
+                background: $alabaster2;
+                color: $treepoppy;
+            }
+        }
+        .fa {
+            margin-right: 5px;
+        }
+    }
+}
+
+.action-button, .action-button-alt {
+    background: $juicyorange;
+    box-shadow: $actionbuttonshadow;
+    color: $white;
+    display: block;
+    font-weight: 700;
+    height: 60px;
+    letter-spacing: 0.4px;
+    line-height: 21px;
+    padding-left: 60px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    width: 100%;
+    &:hover, &:focus {
+        background: $juicyorange2;
+        color: $white;
+        text-decoration: none;
+    }
+    .action-button-label {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding-left: 60px;
+    }
+}
+
+.action-button-alt {
+    background: $blueskies;
+    &:hover, &:focus {
+        background: $blueskies2;
+    }
+}
+
+.action-button.active {
+    background: $juicyorange3;
+    &:hover, &:focus {
+        background: $juicyorange3;
+    }
+}
+
+.action-button-alt.active {
+    background: $blueskies3;
+    &:hover, &:focus {
+        background: $blueskies3;
+    }
+}
+
+.action-button-icon {
+    @include font-size(25);
+    border-right: 1px solid $white;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    .fa {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .fa-car {
+        @include font-size(22);
+    }
+}
+
+.main-action-button-wrapper {
+    .action-button, .action-button-alt {
+        @include font-size(15);
+        height: 55px;
+        line-height: 21px;
+        padding-left: 55px;
+    }
+    .action-button-icon {
+        @include font-size(22);
+        width: 55px;
+        .fa-car {
+            @include font-size(20);
+        }
+    }
+}
+
+.success-btn, .danger-btn {
+    transition: all .3s;
+    background: $flamingo;
+    background: $firewatch;
+    border-radius: 0px;
+    border: none;
+    color: $white;
+    outline: none;
+    padding: 6px 24px;
+    &:hover, &:focus {
+        background: $brickred;
+        background: $firewatch2;
+    }
+}
+
+.success-btn {
+    background: $lush;
+    &:hover, &:focus {
+        background: $lush2;
+    }
+}
+
+.feedback-btn {
+    min-width: 120px;
+    margin: 0px 5px;
+    @include max-width-767 {
+        min-width: 40%;
+    }
+}
+
+.primary-button {
+    background: $yelloworange;
+    background: $juicyorange;
+    border-radius: 0px;
+    border: none;
+    color: $white;
+    font-weight: 600;
+    height: 40px;
+    outline: 0;
+    padding: 6px 24px;
+    line-height: 26px;
+    transition: all 0.3s;
+    &:hover, &:focus {
+        background: $treepoppy;
+        background: $juicyorange2;
+    }
+    .fa {
+        margin-right: 5px;
+    }
+    @include max-width-767 {
+        width: 100%;
+    }
+}
+
+.secondary-button {
+    background-color: $alabaster2;
+    border: 1px solid $alto2;
+    color: $primarytext;
+    font-weight: 600;
+    height: 40px;
+    outline: 0;
+    padding: 5px 25px;
+    transition: background-color 0.3s;
+    &:hover, &:focus {
+        background-color: $alabaster3;
+    }
+    .fa {
+        margin-right: 8px;
+    }
+    @include max-width-767 {
+        width: 100%;
+    }
+}
+
+.load-hide-btn.secondary-button {
+    color: $secondarytext;
+    display: inline-block;
+    height: 34px;
+    line-height: 32px;
+    padding: 0;
+    width: 34px;
+    &:hover, &:focus {
+        color: $primarytext;
+    }
+    .fa {
+        @include font-size(16);
+        margin: 0;
+    }
+}
+
+.primary-button.back-to-confirmation {
+    padding: 0 32px;
+}
+
+.report-bug-btn {
+    @include font-size(14);
+    align-items: center;
+    background: $white;
+    bottom: 100px;
+    box-shadow:$bugbuttonshadow;
+    color: $secondarytext;
+    display: flex;
+    font-weight: 600;
+    height: 55px;
+    justify-content: center;
+    padding: 5px 16px;
+    position: fixed;
+    right: 0;
+    .fa {
+        @include font-size(24);
+        color: $flamingo;
+        margin-right: 16px;
+    }
+    &:hover, &:focus {
+        color: $secondarytext;
+        text-decoration: none;
+        .fa {
+            color: $brickred;
+            text-decoration: none;
+        }
+    }
+    @include max-width-1002 {
+        display: none;
+    }
+}
+
+#report-bug-comment {
+    resize: vertical;
+}
+
+.nav {
+    .report-bug-sidebar-btn {
+        display: none;
+        @include max-width-1002 {
+            display: block;
+        }
+    }
+}
+
+.detail-search-btn {
+    display: inline-block;
+    line-height: 26px;
+    margin-bottom: 12px;
+    &:hover, &:focus {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+.primary-button.input-button {
+    @include font-size(14);
+    height: 30px;
+    padding: 0px 15px;
+    position: absolute;
+    right: 16px;
+    top: 10px;
+}
+
+.grid-view-control-btn {
+    @include font-size(14);
+    margin: 0 6px 12px 0;
+    height: 34px;
+    padding: 0 24px;
+    @include max-width-767 {
+        @include font-size(16);
+        height: 40px;
+    }
+}
+
+.delete-btn {
+    width: 120px;
+    margin: 0 5px;
+    @include max-width-767 {
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+
+.flat-btn {
+    background: none;
+    border: 0;
+    box-shadow: none;
+    outline: 0;
+    .fa {
+        pointer-events: none;
+    }
+}
+
+.button {
+    outline: 0;
+    &:hover, &:focus {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+.subscribe-btn {
+    @extend .action-button;
+    width: 23%;
+    display:inline-block;
+    margin-right:  8px;
+    margin-top: 30px;
+}
+.top-up-btn {
+    @extend .action-button-alt;
+    display:inline-block;
+    width: 23%;
+}
+
+.buy-creditcodes-btn {
+    @extend .primary-button;
+    background: $blueskies;
+    &:hover, &:focus {
+        background: $blueskies2;
+    }
+}

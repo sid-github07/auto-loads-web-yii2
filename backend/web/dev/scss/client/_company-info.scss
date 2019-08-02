@@ -1,0 +1,109 @@
+.status-select {
+    margin-right: 10px;
+    .select-arrow {
+        right: 13px;
+        top: 8px;
+        z-index: 1;
+    }
+}
+
+.company-status-select {
+    @include font-size(14);
+    appearance: none;
+    border: 1px solid $alto2;
+    outline: none;
+    padding: 3px 20px 3px 5px;
+    position: relative;
+    top: -3px;
+    option {
+        &:first-child {
+            color: $seagreen;
+        }
+        &:last-child {
+            color: $tiamaria;
+        }
+    }
+}
+
+.company-id {
+    color: $disabledtext;
+}
+
+.company-imprints-container {
+    margin-top: 20px;
+}
+
+.company-sign-up-date-container {
+    @include font-size(14);
+    background: $alabaster2;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
+.company-sign-up-date-title {
+    color: $primarytext;
+}
+
+.company-sign-up-date-value {
+    color: $secondarytext;
+}
+
+.company-comments-preview {
+    .table {
+        table-layout: auto;
+    }
+}
+
+.pre-invoice-category-title {
+    border-bottom: 1px solid $alto;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+
+#selected-subscriptions-container {
+    margin-bottom: 32px;
+}
+
+.selected-subscription {
+    margin: 0 -20px;
+    padding: 12px 20px;
+    border-bottom: 1px solid $alto;
+    &:first-child {
+        border-top: 1px solid $alto;
+    }
+    &:nth-of-type(odd) {
+        background: $alabaster6;
+    }
+}
+
+.radius-btn.delete-pre-invoice-btn {
+    float: right;
+    padding: 1px 6.5px;
+}
+
+.create-new-pre-invoice-btn {
+    margin-top: 24px;
+}
+
+.add-company-comment {
+    margin-top: 24px;
+}
+
+.companies-row {
+    .company-comments-preview {
+        margin: 16px -8px 0 -25px;
+        @include max-width-767 {
+            margin: 16px -8px 0 -15px;
+        }
+    }
+}
+
+.user-has-subscription {
+    color: $seagreen !important;
+}
+
+.user-has-no-subscription {
+    color: $disabledtext !important;
+}

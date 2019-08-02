@@ -1,0 +1,121 @@
+.document-container {
+    margin-top: 55px;
+}
+
+.document-title {
+    font-weight: 600;
+}
+
+.document-form {
+    .input-group {
+        @include max-width-767 {
+            display: block;
+        }
+        .input-group-btn {
+            display: table-cell;
+            width: auto;
+            @include max-width-767 {
+                display: block;
+            }
+        }
+        .form-control {
+            float: none;
+            height: 40px;
+            @include max-width-767 {
+                display: block;
+            }
+        }
+    }
+    .btn.primary-button, .btn.secondary-button {
+        border-radius: 0px;
+        line-height: 32px;
+        @include max-width-767 {
+            float: left;
+        }
+    }
+}
+
+.file-caption-ellipsis {
+    margin-top: 0px;
+}
+
+.file-caption-name {
+    margin-left: -15px;
+    margin-top: 3px;
+    .glyphicon {
+        margin-right: 7px;
+    }
+}
+
+.document-submit {
+    position: relative;
+    text-align: center;
+    top: 26px;
+    @include max-width-767 {
+        top: 0px;
+    }
+}
+
+.document-form-container {
+    border: 1px solid $alto;
+    padding: 20px;
+    position: relative;
+}
+
+.document-info {
+    @include font-size(14);
+    border: 1px solid $alto;
+    margin-bottom: 25px;
+    padding: 15px;
+    position: relative;
+    .fa {
+        @include font-size(42);
+        border-right: 1px solid $alto;
+        color: $secondarytext;
+        display: block;
+        float: left;
+        line-height: 60px;
+        margin-left: 15px;
+        margin-right: 20px;
+        padding-right: 25px;
+    }
+}
+
+.document-file-name {
+    color: $primarytext;
+    font-weight: 600;
+}
+
+.document-end-date {
+    color: $secondarytext;
+}
+
+.document-action-buttons {
+    font-weight: 600;
+}
+
+.document-update {
+    color: $cerulean;
+    margin-left: 5px;
+    &:hover, &:focus {
+        cursor: pointer;
+        color: $lochmara;
+        text-decoration: underline;
+    }
+}
+
+.document-close, .document-form-close {
+    @include font-size(20);
+    color: $secondarytext;
+    padding: 6px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    top: 0px;
+    width: 40px;
+    &:hover, &:focus {
+        color: $primarytext;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}

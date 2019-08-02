@@ -1,0 +1,85 @@
+.primary-button.company-create-new-user-btn {
+    display: inline-block;
+    line-height: 30px;
+    margin: 24px 0 16px;
+    text-align: center;
+}
+
+.user-edit-actions-row {
+    margin-top: 16px;
+}
+
+.company-user-activity {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.content-category {
+    @include font-size(18);
+    border-bottom: 1px solid $alto;
+    color: $secondarytext;
+    font-weight: 600;
+    margin: 32px 0 12px;
+    padding-bottom: 12px;
+}
+
+.primary-button.create-new-user-btn {
+    margin-top: 24px;
+}
+
+.user-edit-id {
+    color: $secondarytext;
+    font-weight: 600;
+}
+
+.information-text-row {
+    margin-bottom: 12px;
+}
+
+.user-edit-action-btn-row {
+    margin: 32px 0;
+}
+
+.user-edit-save-btn {
+    margin-right: 12px;
+    @include max-width-767 {
+        margin: 16px auto
+    }
+}
+
+.comments-container {
+    border-top: 1px solid $alto;
+    margin: 44px -20px 0;
+    padding: 16px 24px;
+}
+
+.comments-link {
+    margin-left: 16px;
+    @include max-width-767 {
+        display: block;
+        margin: 16px auto;
+        text-align: center;
+    }
+}
+
+.comment-length-container {
+    color: $secondarytext;
+    margin: -16px 0 24px;
+    text-align: right;
+}
+
+.delete-comment-column-content {
+    a {
+        .fa {
+            @include font-size(18);
+        }
+    }
+}
+
+.primary-button.remove-comment-yes-btn {
+    padding: 10.5px 38px;
+    color: $white;
+    &:hover, &:focus {
+        color: $white;
+    }
+}

@@ -1,0 +1,290 @@
+.pdf-logo {
+    text-align: center; 
+    display: block; 
+    margin-top: -50px;
+}
+
+.logo-image {
+    width: 210px;
+}
+
+.logo-text {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: #1b2c42;
+}
+
+.invoice-heading {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Arial';
+}
+
+.invoice-date {
+    text-align: center;
+    color: #777777;
+    font-family: 'Arial';
+}
+
+hr {
+    margin-bottom: 50px;
+}
+
+.imprint-table {
+    font-size: 14px;
+    color: #6F6F6F;
+    margin-bottom: 50px;
+    font-family: 'Arial';
+}
+
+.seller {
+    font-size: 11px;
+    padding-bottom: 10px;
+    color: #000;
+}
+
+.buyer {
+    font-size: 11px;
+    padding-bottom: 10px;
+    color: #000;
+}
+
+.seller-company-name {
+    font-weight: bold;
+    color: #000;
+}
+
+.buyer-title {
+    font-weight: bold;
+    color: #000;
+}
+
+table {
+    font-family: 'Arial';
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-heading {
+    border: 1px solid #485A77;
+    background-color: #485A77;
+    font-weight: 700;
+}
+
+.product-info-row {
+    height: 40px;
+}
+
+.product-number-heading {
+    width: 8%;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #485A77;
+    padding-left: 5px;
+    text-align: left;
+}
+.product-name-heading {
+    width: 58%;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 5px;
+    border: 1px solid #485A77;
+    text-align: left;
+}
+
+.product-price-heading {
+    width: 10%;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 5px;
+    border: 1px solid #485A77;
+    text-align: left;
+}
+
+.product-discount-heading {
+    width: 10%;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 5px;
+    border: 1px solid #485A77;
+    text-align: left;
+}
+
+.product-full-price-heading {
+    width: 14%;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 5px;
+    border: 1px solid #485A77;
+    text-align: left;
+}
+
+.product-number {
+    color: #777; 
+    font-size: 12px; 
+    border: 1px solid #6F6F6F;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+.product-name {
+    color: #777;
+    font-size: 12px;
+    border: 1px solid #6F6F6F;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+}
+
+.product-price {
+    color: #777;
+    font-size: 12px;
+    border: 1px solid #6F6F6F;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    text-align: right;
+}
+
+.product-discount {
+    color: #777;
+    font-size: 12px; 
+    border: 1px solid #6F6F6F; 
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+    padding-right: 5px; 
+    text-align: right;
+}
+
+.product-full-price {
+    color: #777; 
+    font-size: 12px; 
+    border: 1px solid #6F6F6F; 
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+    padding-right: 5px; 
+    text-align: right;
+}
+
+.netto-heading {
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold; 
+    color: #777; 
+    padding-top: 7px; 
+    padding-bottom: 7px;
+    padding-right: 5px;
+    font-family: 'Arial';
+}
+
+.vat-heading {
+    text-align: right;
+    font-size: 12px; 
+    font-weight: bold; 
+    color: #777; 
+    padding-top: 7px; 
+    padding-bottom: 7px; 
+    padding-right: 5px;
+    font-family: 'Arial';
+}
+.brutto-heading {
+    text-align: right;
+    font-weight: bold; 
+    color: #223865; 
+    font-size: 17px; 
+    padding-top: 7px; 
+    padding-bottom: 7px; 
+    padding-right: 5px;
+    font-family: 'Arial';
+}
+
+.netto-price {
+    font-weight: bold;
+    color: #777; 
+    padding-top: 7px; 
+    padding-bottom: 7px; 
+    padding-right: 5px;
+    text-align: right; 
+    font-size: 12px;
+    font-family: 'Arial';
+}
+
+.vat-price {
+    font-weight: bold;
+    color: #777; 
+    padding-top: 7px; 
+    padding-bottom: 7px;
+    padding-right: 5px;
+    text-align: right; 
+    font-size: 12px;
+    font-family: 'Arial';
+}
+
+.brutto-price {
+    font-weight: bold;
+    color: #223865; 
+    font-size: 18px; 
+    padding-top: 7px; 
+    padding-bottom: 7px;
+    padding-right: 5px;
+    text-align: right;
+    font-family: 'Arial';
+}
+
+.text-right {
+    text-align: right;
+}
+
+.price-in-words {
+    margin-top: 30px; 
+    margin-bottom: 20px;
+    font-family: 'Arial';
+}
+
+.payment-deadline {
+    margin-bottom: 35px;
+    font-family: 'Arial';
+}
+
+.notice {
+    font-size: 11px;
+    font-style: italic;
+    margin-bottom: 80px;
+    font-family: 'Arial';
+}
+
+.invoiced-by-container {
+    color: #777;
+    font-family: 'Arial';
+}
+
+.invoiced-by {
+    color: #777; 
+    font-size: 12px;
+    font-family: 'Arial';
+}
+
+.invoiced-by-who {
+    color: #777; 
+    font-size: 12px;
+    font-family: 'Arial';
+}
+
+.receiver {
+    color: #777; 
+    font-size: 12px; 
+    text-align: right;
+    font-family: 'Arial';
+}
+.underline {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #777;
+    width: 32%; 
+    height: 20px;
+} 

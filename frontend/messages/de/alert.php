@@ -1,0 +1,190 @@
+<?php
+
+return [
+    'ERROR_MESSAGE_OCCURRED_ERROR' => 'Der obige Fehler ist aufgetreten, während der Server versuchte Ihre Anfrage zu bearbeiten',
+    'ERROR_MESSAGE_CONTACT_US' => 'Bitte kontaktieren Sie uns, wenn Sie denken, dass das ein Serverfehler ist',
+    'FAQ_FEEDBACK_SAVED_SUCCESSFULLY' => 'Ihre Rückmeldung wurde erfolgreich registriert. Wir versuchen auf sie ' .
+                                         'möglichst schnell zu antworten',
+    'FAQ_FEEDBACK_CANNOT_SEND_ADMIN/CLIENT_EMAIL' => 'Ihre Rückmeldung wurde erfolgreich registriert, aber Ihre ' .
+                                                     'Rückmeldung konnte an den Administrator nicht gesendet werden, ' .
+                                                     'deshalb  kann es sein, dass Sie länger auf die Antwort auf Ihre ' .
+                                                     'geschriebene Rückmeldung warten müssen',
+    'FAQ_FEEDBACK_CANNOT_LOAD_OR_SAVE' => 'Wir bitten Sie um Entschuldigung, aber  Ihre Rückmeldung konnte nicht ' .
+                                          'registriert werden. Bitte versuchen Sie es noch einmal',
+    'INVALID_USER_ACCOUNT_TYPE' => 'Falscher Personentyp',
+    'USER_LANGUAGE_INVALID_USER_ID_OR_LANGUAGE' => 'Falscher Identifizierungsschlüssel des Benutzers oder es wurden ' .
+                                                   'keine Sprachen des Benutzers gewählt',
+    'ELASTIC_SEARCH_TEXT_TOO_SHORT' => 'Suchtext darf nicht kürzer als  {length} Symbole sein',
+    'SIGN_UP_SUCCESSFUL_INVALID_EMAIL_OR_TOKEN' => 'Falsch eingegebene E-Mail-Adresse oder der Identifizierungsschlüssel des Benutzers',
+    'SIGN_UP_CANNOT_LOAD_OR_CREATE' => 'Ihrer angegebenen Daten konnten nicht registriert werden. Versuchen Sie es noch einmal',
+    'CONFIRM_SIGN_UP_USER_NOT_FOUND_BY_TOKEN' => 'Der Benutzer kann nach dem angegebenen Identifizierungsschlüssel nicht gefunden werden',
+    'CONFIRM_SIGN_UP_CANNOT_CONFIRM' => 'Ihre Anmeldung konnte nicht bestätigt werden. Bitte versuchen Sie es noch einmal',
+    'CONFIRM_SIGN_UP_CANNOT_CREATE_USER_COMPANY' => 'Ihr Unternehmen konnte nicht erstellt werden. Versuchen Sie es erneut',
+    'CONFIRM_SIGN_UP_CANNOT_ACCEPT_INVITATION' => 'hre Unternehmenseinladung konnte nicht bestätigt werden. Versuchen Sie es erneut',
+    'CONFIRM_SIGN_UP_CANNOT_ASSIGN_USER_TO_COMPANY' => 'Sie konnten dem Unternehmen nicht zugeordnet werden. Versuchen Sie es erneut',
+    'USER_IS_BLOCKED' => 'Login ist unmöglich. Ihr Konto ist gesperrt.',
+    'USER_EMAIL_NOT_CONFIRMED' => 'Login ist unmöglich, Sie haben Ihre Email-Adresse nicht bestätigt.',
+    'INVALID_EMAIL_OR_PASSWORD' => 'Falsch angegebene E-Mail-Adresse oder Passwort. Bitte versuchen Sie es noch einmal',
+    'USER_BY_EMAIL_NOT_FOUND' => 'Benutzer mit einer solchen E-Mail Mail existiert nicht.',
+    'INVALID_PASSWORD' => 'Falscher Password.',
+    'REQUEST_PASSWORD_RESET_INVALID_USER_DATA' => 'Es wurde falsche Email-Adresse angegeben',
+    'REQUEST_PASSWORD_RESET_USER_NOT_FOUND' => 'Kein Benutzer mit der angegebenen Email-Adresse gefunden',
+    'REQUEST_PASSWORD_RESET_CANNOT_SAVE_PASSWORD_RESET_TOKEN' => 'Es konnte der Link der Passwort-Erinnerung an Ihre angegebene ' .
+                                                                 'E-Mail nicht gesendet warden. Bitte versuchen Sie es noch einmal',
+    'REQUEST_PASSWORD_RESET_CANNOT_SEND_EMAIL' => 'Es konnte der Link der Passwort-Erinnerung an Ihre angegebene ' .
+                                                  'E-Mail nicht gesendet warden. Bitte versuchen Sie es noch einmal',
+    'PASSWORD_RESET_SENT_INVALID_EMAIL' => 'Falsche Email-Adresse',
+    'RESET_PASSWORD_TOKEN_IS_EMPTY' => 'Der Identifizierungsschlüssel der Wiederherstellung des Passwortes darf nicht leer sein',
+    'RESET_PASSWORD_INVALID_TOKEN' => 'Falsch angegebener Identifizierungsschlüssel der Wiederherstellung des Passwortes',
+    'RESET_PASSWORD_CANNOT_LOAD_OR_RESET_PASSWORD' => 'Die Wiederherstellung des Passwortes ist fehlgeschlagen',
+    'NOT_FOUND_USER_BY_ID' => 'Benutzersuche nach dem angegebenen Identifizierungsschlüssel ist fehlgeschlagen',
+    'CHANGE_PASSWORD_INVALID_CURRENT_PASSWORD' => 'Das aktuelle Passwort ist falsch angegeben',
+    'CHANGE_PASSWORD_CANNOT_LOAD_OR_CHANGE' => 'Ihr eingegebenes neues Passwort konnte nicht gespeichert werden' .
+                                               'Bitte versuchen Sie es noch einmal',
+    'CHANGE_PASSWORD_SAVED_SUCCESSFULLY' => 'Passwort wurde erfolgreich geändert',
+    'EDIT_MY_DATA_UPDATED_SUCCESSFULLY' => 'Ihre Datenänderungen wurden erfolgreich gespeichert',
+    'EDIT_MY_DATA_CANNOT_UPDATE' => 'Ihre Datenänderungen konnten nicht aktualisiert werden. Versuchen Sie es noch einmal',
+    'REQUEST_EMAIL_CHANGE_SENT_SUCCESSFULLY' => 'Ihre E-Mail wurde erfolgreich an den Administrator gesendet',
+    'REQUEST_EMAIL_CHANGE_CANNOT_SEND_EMAIL' => 'Ihre E-Mail konnte an den Administrator nicht gesendet werden. ' .
+                                                'Versuchen Sie es noch einmal',
+    'CITY_NOT_FOUND_BY_ID' => 'Die Stadt konnte nach dem angegebenen Identifizierungsschlüssel nicht gefunden werden',
+    'CITIES_NOT_FOUND_BY_IDS' => 'Die Städte konnten nach den angegebenen Identifizierungsschlüsseln nicht gefunden werden',
+    'COMPANY_NOT_FOUND_BY_USER' => 'Solche Firma konnte nach dem Benutzername nicht gefunden werden',
+    'CONTACT_INFO_INVALID_ACCOUNT_TYPE' => 'Personentyp ist falsch',
+    'COMPANY_INFO_UPDATED_SUCCESSFULLY' => 'Datenänderungen der Firma wurden erfolgreich gespeichert',
+    'COMPANY_INFO_CANNOT_UPDATE' => 'Die Datenänderungen der Firma konnten nicht gespeichert werden. Bitte versuchen ' .
+                                    'Sie es noch einmal',
+    'CONTACT_INFO_VALIDATION_INVALID_ACCOUNT_TYPE' => 'Personentyp ist falsch',
+    'REQUEST_VAT_CODE_CHANGE_NOT_VALID' => 'Inhalt der E-Mail ist falsch',
+    'REQUEST_VAT_CODE_CHANGE_SENT_SUCCESSFULLY' => 'Ihre E-Mail wurde erfolgreich an den Administrator gesendet',
+    'REQUEST_VAT_CODE_CHANGE_CANNOT_SEND_EMAIL' => 'Die E-Mail konnte an den Administrator nicht gesendet werden. ' .
+                                                   'Versuchen Sie es noch einmal',
+    'ADD_DOCUMENT_INVALID_TYPE' => 'Dateityp ist falsch angegeben',
+    'ADD_DOCUMENT_CREATED_SUCCESSFULLY' => 'Datei wurde erfolgreich gespeichert',
+    'ADD_DOCUMENT_CANNOT_CREATE' => 'Datei konnte nicht gespeichert werden. Bitte versuchen Sie es noch einmal',
+    'DOWNLOAD_DOCUMENT_INVALID_TYPE' => 'Dateityp ist falsch angegeben',
+    'DOWNLOAD_DOCUMENT_FILE_NOT_EXISTS' => 'Diese Datei gibt es nicht',
+    'DOCUMENT_UPLOAD_CANNOT_SAVE' => 'Datei konnte nicht gespeichert werden. Bitte versuchen Sie es noch einmal',
+    'REMOVE_DOCUMENT_INVALID_TYPE' => 'Dateityp ist falsch',
+    'REMOVE_DOCUMENT_REMOVED_SUCCESSFULLY' => 'Datei wurde erfolgreich gelöscht',
+    'REMOVE_DOCUMENT_CANNOT_REMOVE' => 'Datei konnte nicht gelöscht werden. Bitte versuchen Sie es noch einmal',
+    'NOT_FOUND_COMPANY_DOCUMENT_BY_TYPE' => 'Datei konnte nach dem Dateityp nicht gefunden werden',
+    'SEND_INVITATION_CANNOT_SEND' => 'Einladung konnte nicht gesendet werden. Bitte versuchen Sie es noch einmal',
+    'SIGN_UP_INVITATION_INVALID_TOKEN' => 'Identifizierungsschlüssel der Einladung zur Registrierung ist falsch',
+    'SIGN_UP_INVITATION_NOT_FOUND_BY_TOKEN' => 'Einladung konnte nach dem Identifizierungsschlüssel nicht gefunden werden',
+    'SIGN_UP_INVITATION_CANNOT_SAVE' => 'Ihre eingegebenen Daten konnten nicht registriert werden. Versuchen Sie bitte noch einmal',
+    'INVITATION_SUCCESSFUL_INVALID_EMAIL' => 'E-Mail-Adresse des Benutzers ist falsch eingegeben',
+    'NOT_FOUND_USER_SERVICE_BY_ID' => 'Solcher Benutzerservice konnte nicht gefunden werden',
+    'SUBSCRIPTION_DOWNLOAD_INVOICE_NOT_USER_SERVICE_OWNER' => 'Sie haben kein Recht diese Datei zu prüfen',
+    'SUBSCRIPTION_DOWNLOAD_INVOICE_FILE_NOT_FOUND' => 'Diese Rechnung konnte nicht gefunden werden',
+    'USER_INVOICE_NOT_FOUND_BY_USER_SERVICE_ID' => 'Diese Rechnung konnte nach dem Benutzerservice nicht gefunden werden',
+    'INVOICE_FACTORY_INVALID_TYPE' => 'Typ der Rechnung ist falsch',
+    'INVOICE_CREATE_BY_ADMIN_COMPANY_NOT_FOUND' => 'Firma konnte für die Rechnung nicht gefunden werden',
+    'INVOICE_DOCUMENT_NOT_FOUND' => 'Rechnung konnte nicht gefunden werden',
+    'SERVICE_PAYMENT_METHOD_USER_SERVICE_IS_PAID' => 'Solcher Benutzerservice wurde schon bezahlt',
+    'SERVICE_PAYMENT_METHOD_SERVICE_PRICE_IS_UNDEFINED' => 'Zahlungspreis ist falsch angegeben',
+    'PAYMENT_FACTORY_INVALID_METHOD' => 'Die Zahlungsmethode für Service ist falsch angegeben',
+    'SERVICE_PAYMENT_METHOD_USER_IS_NOT_OWNER' => 'Sie haben kein Recht diesen Service zu bezahlen',
+    'EDIT_LOAD_CANNOT_SAVE' => 'Frachtangaben konnten nicht gespeichert werden',
+    'EDIT_LOAD_UPDATED_SUCCESSFULLY' => 'Frachtangaben wurden erfolgreich gespeichert',
+    'LOAD_DATE_CANNOT_BE_CHANGED' => 'Aufladungsdatum konnte nicht geändert werden. Bitte versuchen Sie es noch einmal',
+    'LOAD_DATE_CHANGED_SUCCESSFULLY' => 'Aufladungsdatum wurde erfolgreich geändert',
+    'LOAD_REMOVED_SUCCESSFULLY' => 'Fracht erfolgreich gelöscht',
+    'MULTIPLE_LOADS_REMOVED_SUCCESSFULLY' => 'Frachten konnte erfolgreich gelöscht',
+    'LOAD_ACTIVITY_UPDATED_SUCCESSFULLY' => 'Frachtaktivität wurde erfolgreich geändert',
+    'NOT_ENOUGH_CREDITS_TO_EXTEND_LOAD_EXPIRY_TIME' => 'Nicht genug Guthaben, um die Ladezeit der Fracht zu verlängern.',
+    'NOT_ENOUGH_SERVICE_CREDITS' => 'Not enough service credits.',
+    'MULTIPLE_LOADS_ACTIVITY_UPDATED_SUCCESSFULLY' => 'Markierter Frachtstatus wurde erfolgreich geändert.',
+    'LOAD_ANNOUNCE_CREATED_SUCCESSFULLY' => 'Fracht {loadCity} į {unloadCity}, {quantity} - wurde erfolgreich bekanntgegeben!',
+    'LOAD_ANNOUNCE_CREATED_ACTIVATE_VIA_EMAIL' => 'Um die Anzeige zu aktivieren, klicken Sie auf den Link, den wir '.
+                                                  'gesendet haben an <strong>{email}</strong>',
+    'LOAD_ANNOUNCE_CREATED_REACTIVATE' => 'Anzeige ist 7 Werktage aktiv, aber sie muss alle 24 Stunden aktualisiert ' .
+                                          'werden, sonst wird sie unsichtbar. ',
+    'LOAD_ANNOUNCE_CREATED_REACTIVATE_VIA_EMAIL' => 'Aktualisieren können Sie über den Link, den wir an Sie gesendet haben',
+    'LOAD_ANNOUNCE_NO_SUBSCRIPTION' => 'Sie haben den Limit für kostenlose Anzeigen überschritten ' .
+                                       '(1 Anzeige pro Woche), kaufen Sie {subscription}.',
+    'SUBSCRIPTION' => 'Abonnement',
+    'LOAD_ANNOUNCE_CANNOT_ANNOUNCE_LOAD' => 'Fracht konnte nicht bekanntgegeben werden. Bitte versuchen Sie es noch einmal',
+    'LOAD_SEARCH_RESULTS_INVALID_POST_DATA' => 'Suchergebnisse der Frachten sind falsch',
+    'LOAD_PREVIEW_LOAD_NOT_FOUND' => 'Solche Fracht konnte nicht gefunden werden. Bitte versuchen Sie es noch einmal.',
+    'NO_DIRECT_TRANSPORTATION_RESULTS' => 'Es gibt keine direkte Frachten',
+
+    // City
+    'COUNTRY_NOT_FOUND' => 'Dieses Land wurde nicht gefunden.',
+
+    // Roundtrips
+    'ROUND_TRIPS_INVALID_CITY_ID' => 'Falsch angegebene Stadt',
+    'INVALID_LOAD_DEACTIVATION_TOKEN' => 'Der Identifizierungsschlüssel der Frachtausblendung ist falsch',
+    'INVALID_LOAD_REMOVING_TOKEN' => 'Der Identifizierungsschlüssel für das Löschen der Frachten ist falsch',
+    'WRONG_REQUEST_HIDE_SUGGESTION' => 'Wrong request to hide suggestion',
+    
+    'REPORT_A_BUG_SUCCESS' => 'Fehler wurde erfolgreich angemeldet',
+    'REPORT_A_BUG_ERROR' => 'Fehler wurde nicht registriert. Versuchen Sie es erneut',
+
+    'LOAD_NOT_FOUND_BY_ID' => 'Diese Fracht existiert nicht.',
+    'NOT_ENOUGH_CREDITS_TO_PREVIEW_LOAD_INFO' => 'Not enough credits to preview supplier contact information',
+
+    // CarTransporterAnnouncementController
+    'ONLY_SIGNED_UP_USER_CAN_ANNOUNCE_CAR_TRANSPORTER' => 'Ein Autotransporter kann nur von einem angemeldeten Benutzer eingetragen werden. Bitte einloggen',
+    'NOT_ENOUGH_CREDITS_TO_ANNOUNCE_CAR_TRANSPORTER' => 'Not enough credits to announce car transporter.',
+    'CAR_TRANSPORTER_ANNOUNCEMENT_ANNOUNCED_SUCCESSFULLY' => 'Autotransporter von {loadLocations} nach {unloadLocations} ' .
+        'wurde erfolgreich eingetragen. Es gibt im Autotransporter freie Plätze: {quantity}.',
+    'CAR_TRANSPORTER_ANNOUNCEMENT_REACTIVATE' => 'Announcement ends after 7 working days, however You still must renew ' .
+                                                 'it every 24 hours or it will be unreachable for other users. ',
+    'CANNOT_SAVE_CAR_TRANSPORTER' => 'Kein neu eingetragener Autotrasporter konnte gespeichert werden.',
+
+    // CarTransporterController
+    'CAR_TRANSPORTER_NOT_FOUND' => 'Dieser Autotransporter konnte nicht identifiziert werden',
+
+    // MyCarTransporterController
+    'CAR_TRANSPORTER_AVAILABLE_FROM_DATE_CANNOT_BE_CHANGED' => 'Die Datumänderung zur Eintragung des freien Autotransporters ist unmöglich.',
+    'CAR_TRANSPORTER_AVAILABLE_FROM_DATE_CHANGED_SUCCESSFULLY' => 'Die Datumänderung zur Eintragung des freien Autotransporters wurde erfolgreich durchgeführt.',
+    'NOT_ENOUGH_CREDITS_TO_EXTEND_CAR_TRANSPORTER' => 'Nepakanka kreditų pratęsti autovežio skelbimą.',
+    'MULTIPLE_CAR_TRANSPORTERS_VISIBILITY_CHANGED_SUCCESSFULLY' => 'Status der markierten Autotransporter wurde erfolgreich geändert.',
+    'CAR_TRANSPORTER_VISIBILITY_CHANGED_SUCCESSFULLY' => 'Status des markierten Autotransporters wurde erfolgreich geändert.',
+    'MULTIPLE_CAR_TRANSPORTERS_REMOVED_SUCCESSFULLY' => 'Die Autotransporter wurden erfolgreich gelöscht.',
+    'CAR_TRANSPORTER_REMOVED_SUCCESSFULLY' => 'Der Autotransporter wurde erfolgreich gelöscht.',
+    
+    'LOAD_SUGGESTIONS_REJECT_SUCCESS' => 'You succesfully canceled load suggestions sending to your email',
+    'LOAD_SUGGESTIONS_REJECT_FAIL' => 'Something went wrong while canceling load suggestions sending',
+    'LOAD_SUGGESTIONS_REJECT_ALREADY' => 'You have already rejected load suggestions sending to your email',
+    'INVALID_EMAIL' => 'Bad email',
+    'INVALID_TOKEN' => 'Bad token',
+    'NO_USER_WAS_FOUND' => 'User was not found',
+    'USER_NOT_FOUND_BY_ID' => 'User could not be found by specified ID',
+    'NOT_ENOUGH_ADVERTS_PTS' => 'Not enough Advertisement Points left for this action',
+    'LOAD_ALREADY_ADVERT' => 'Load has been advertised already',
+    'LOAD_ADVERT_SUCCESS' => 'Load has been advertised successfully',
+    'LOAD_ADVERT_FAILURE' => 'Failed to advertise this load',
+    'LOAD_ADVERT_ERROR' => 'Load advertisement Error',
+    'TRANSPORTER_ALREADY_ADVERT' => 'This Car Transporter has already been advertised',
+    'TRANSPORTER_ADVERT_SUCCESS' => 'Car Transporter has been advertised successfully',
+    'TRANSPORTER_ADVERT_FAILURE' => 'Failed to advertise this transporter',
+    'TRANSPORTER_ADVERT_ERROR' => 'Car Transporter advertisement Error',
+    'preview_buy_success' => 'Service has been bought successfully',
+    'preview_buy_error' => 'Service transaction error',
+    'LOAD_OPEN_CONTACTS_SUCCESS' => 'Open contacts has been set successfully',
+    'LOAD_OPEN_CONTACTS_FAILURE' => 'Failed to set open contacts',
+    'LOAD_ALREADY_HAS_OPEN_CONTACTS' => 'Load already has open contacts until {date}',
+    'TRANSPORTER_ALREADY_OPEN_CONTACTS' => 'Car transporter already has open contacts until {date}',
+    'TRANSPORTER_OPEN_CONTACTS_SUCCESS' => 'Open contacts has been set successfully',
+    'TRANSPORTER_OPEN_CONTACTS_FAILURE' => 'Failed to set open contacts for this car transporter',
+    'TRANSPORTER_OPEN_CONTACTS_ERROR' => 'Car transporter open contacts error',
+    'NOT_ENOUGH_SERVICE_CREDITS_FOR_OPEN_CONTACTS' => 'Not enough service credits',
+    'INCORRECT_OPEN_CONTACTS_DATA' => 'Incorrect open contacts data',
+    
+    'BASIC_CREDITS_20_SERVICE_NOT_FOUND' => 'Service BASICCREDITS20 not found',
+    'USER_SERVICE_ACTIVE_NOT_FOUND' => 'Active user service not found',
+    'INVALID_REQUEST' => 'Invalid request',
+    'INVALID_CREDITCODE_ENTERED' => 'Ungültiger Creditcode',
+    'CREDITCODE_APPLIED_TO_PREVIEW' => 'Der Creditcode wurde erfolgreich angewendet und die Informationen sind jetzt verfügbar.',
+    'CREDITCODE_INSUFFICIENT' => 'Der Creditcode ist nicht ausreichend. {creditsLeft} Credits sind übrig es werden aber {creditsCost} Credits benötigt.',
+    'CREDITCODE_PURCHASE_FORM_CANNOT_BE_SAVED' => 'Die Daten konnten nicht gespeichert werden. Versuchen sie es noch mal.',
+    'CREDITCODE_COULD_NOT_GENERATED' => 'Creditcode konnte nicht generiert werden. Versuchen sie es bitte noch mal.',
+    'CREDITCODE_INVOICE_COULD_NOT_GENERATED' => 'Rechnung für Creditcode konnte nicht erzeugt werden.',
+    'CREDITCODE_CANNOT_CREATE_USER_COMPANY' => 'Fehler beim speichern der Unternehmensdaten.',
+    'CREDITCODE_SUCCESSFULLY_PURCHASED' => 'Zahlung für den Service war erfolgreich, ihr Service ist jetzt aktiv.<br> ' .
+    'Dies ist ihr Creditcode: {creditCode}. Sie haben diesen auch als and folgende Adresse {email} erhalten ebenso auch die Rechnung {invoiceNumber}.',
+    
+    'MODEL_NOT_FOUND' => 'Model {class} not found',
+];

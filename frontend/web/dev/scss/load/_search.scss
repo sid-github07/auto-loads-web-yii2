@@ -1,0 +1,47 @@
+//Search request
+#load-searchradius {
+    label {
+        margin-right: 15px;
+        @include max-width-767 {
+            width: 100%;
+            margin: 5px auto;
+        }
+    }
+}
+
+.field-load-searchradius, .field-cartransporter-radius {
+    .control-label {
+        text-align: center;
+    }
+}
+//Search results
+.search-results-container {
+    margin-top: 32px;
+    padding: 24px 12px;
+    border: 1px solid $alto2;
+    background: $white;
+}
+
+.search-results-heading {
+    @include font-size(18);
+    font-weight: 700;
+    margin-right: 12px;
+}
+
+.search-results-content {
+    display: inline-block;
+}
+
+.cities-separator {
+    margin: 0 7px;
+}
+
+.devious-loads, .direct-loads {
+    .custom-table {
+        margin: 24px 0 48px 0;
+    }
+}
+
+.expanded-load-preview-content {
+    position: relative;
+}

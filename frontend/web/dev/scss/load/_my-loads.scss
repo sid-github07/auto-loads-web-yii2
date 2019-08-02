@@ -1,0 +1,37 @@
+.not-shown-load {
+    color: $brickred;
+}
+
+.separator {
+    &:last-child {
+        display: none;
+    }
+}
+
+//Edit load modal
+.load-payment-method-selection {
+    &:after {
+        content: "\f0d7";
+        @include font-size(14);
+        font-family: $fontawesome;
+        color: $secondarytext;
+        pointer-events: none;
+        position: absolute;
+        top: 40px;
+        right: 26px;
+    }
+}
+
+div.load-activity-container::after,
+div.car-transporter-activity-container:after {
+    content: " ";
+    height: 0;
+    width: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgba(0, 0, 0, .54);
+    position: absolute;
+    right: 30px;
+    top: 18px;
+    transition: all 0.3s linear;
+}

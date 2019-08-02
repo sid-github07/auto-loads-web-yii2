@@ -1,0 +1,26 @@
+.posts-per-page-select {
+    display: inline-block;
+    height: 30px;
+    position: relative;
+    &:after {
+        content: "\f0d7";
+        @include font-size(12);
+        font-family: $fontawesome;
+        color: $secondarytext;
+        pointer-events: none;
+        position: absolute;
+        top: 1px;
+        right: 5px;
+    }
+    select {
+        appearance: none;
+        border: 1px solid $alto2;
+        padding: 0 15px 0 6px;
+    }
+}
+
+.page-size-filter-label {
+    float: left;
+    margin: 0 10px 0 0;
+    line-height: 30px;
+}

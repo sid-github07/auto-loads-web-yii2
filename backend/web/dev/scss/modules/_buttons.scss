@@ -1,0 +1,174 @@
+.primary-button, .primary-button-alt {
+    background-color: $cerulean;
+    border: none;
+    color: $white;
+    @include font-size(14);
+    font-weight: 600;
+    min-height: 40px;
+    outline: 0;
+    padding: 5px 25px;
+    transition: background-color 0.3s;
+    &:hover, &:focus {
+        background-color: $lochmara;
+        color: $white;
+        text-decoration: none;
+    }
+    .fa {
+        margin-right: 8px;
+    }
+    @include max-width-767 {
+        width: 100%;
+    }
+}
+
+.primary-button-alt {
+    background-color: $sunshade;
+    &:hover, &:focus {
+        background-color: $orangepeel;
+    }
+}
+
+.secondary-button, .export-full-csv {
+    background-color: $alabaster3;
+    outline: 0;
+    color: $primarytext;
+    min-height: 40px;
+    @include font-size(14);
+    padding: 5px 25px;
+    border: 1px solid $alto;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    &:not(.export-full-csv-disabled) {
+        &:hover, &:focus {
+            background-color: $alabaster4;
+        }
+    }
+    .fa {
+        margin-right: 8px;
+    }
+    @include max-width-767 {
+        width: 100%;
+    }
+}
+
+.primary-button.search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    .fa {
+        margin: 0px;
+    }
+}
+
+.primary-button-alt.home-btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 10px 40px;
+    position: relative;
+}
+
+.radius-btn {
+    border-radius: 25px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    padding: 3px;
+    width: 25px;
+    @include max-width-767 {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .fa-file-pdf-o {
+        @include font-size(16);
+        margin-left: 1px;
+    }
+}
+
+.info.radius-btn {
+    background: $cerulean;
+    transition: background, 0.3s;
+    &:hover, &:focus {
+        background: $lochmara;
+    }
+}
+
+.success.radius-btn {
+    background: $seagreen;
+    transition: background, 0.3s;
+    &:hover, &:focus {
+        background: darken($seagreen, 7%);
+    }
+}
+
+.danger.radius-btn {
+    background: $tiamaria;
+    transition: background, 0.3s;
+    &:hover, &:focus {
+        background: darken($tiamaria, 7%);
+    }
+}
+
+.warning.radius-btn {
+    background: $sunshade;
+    transition: background, 0.3s;
+    &:hover, &:focus {
+        background: $orangepeel;
+    }
+}
+
+.export-full-csv {
+    display: inline-block;
+    line-height: 28px;
+    text-align: center;
+    &:hover, &:focus {
+        text-decoration: none;
+        color: $primarytext;
+    }
+}
+
+.export-full-csv-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    @include prefix-user-select(none);
+}
+
+.secondary-button.validate-vat-code-button {
+    align-self: baseline;
+    display: flex;
+    height: 40px;
+    margin: 23px 0 0 6px;
+    padding: 0 18px;
+    justify-content: center;
+    @include max-width-1240 {
+        margin: 0 0 25px 0;
+    }
+}
+
+.secondary-button.review-account-btn {
+    padding: 10px 25px;
+    margin-left: 7px;
+    &:hover, &:focus {
+        text-decoration: none;
+        color: $primarytext;
+    }
+    @include max-width-767 {
+        display: inline-block;
+        line-height: 26px;
+        margin: 16px 0;
+        padding: 6px 25px;
+    }
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 9px 25px;
+    &:hover, &:focus {
+        text-decoration: none;
+        color: initial;
+    }
+}

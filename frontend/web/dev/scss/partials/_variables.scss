@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+//Colors
+$alabaster: #f7f7f7;
+$alabaster2: #fafafa;
+$alabaster3: darken($alabaster, 7%);
+$alabaster4: darken($alabaster, 3%);
+$alabaster5: #f4f4f4;
+$grey: #eae9e9;
+$alto: #d1d1d1;
+$alto2: #ddd;
+$bigstone: #1b2c42;
+$curiousblue2: #2280c5;
+$curiousblue: #278eda;
+$chateaugreen: #3d8e40; //Success button light color
+$apple: #367d39; //Success button dark color
+$chateaugreen2: darken($chateaugreen, 5%); //Success button light color
+$apple2: darken($apple, 5%); //Success button dark color
+$gallery: #ebebeb;
+$gallery2: darken($gallery, 7%);
+$mantis: #76B852;
+$mantis2: darken($mantis, 7%);
+$olivine: #8DC26F;
+$olivine2: darken($olivine, 7%);
+$eggsour: #FFF3DE;
+$selectiveyellow: #FFB300;
+$treepoppy: #fb9f1f;
+$yelloworange: #ffab35;
+$flamingo: #e82213; //Danger button gradient light color
+$brickred: #d61426; //Danger button gradient dark color
+$flamingo2: darken($flamingo, 5%); //Danger button gradient hover light color
+$brickred2: darken($brickred, 5%); //Danger button gradient hover dark color
+$treepoppy2: darken($treepoppy, 7%);
+$yelloworange2: darken($yelloworange, 7%);
+$treepoppy3: darken($treepoppy, 12%);
+$yelloworange3: darken($yelloworange, 12%);
+$white: #ffffff;
+$pictonblue: #3498db; //Blue action button gradient dark color 
+$royalblue: #3cb0fd; //Blue action button gradient light color
+$pictonblue2: darken($pictonblue, 7%); //Blue action button hover gradient dark color 
+$royalblue2: darken($royalblue, 7%); //Blue action button hover gradient light color
+$pictonblue3: darken($pictonblue, 15%); //Blue action button hover gradient dark color 
+$royalblue3: darken($royalblue, 15%); //Blue action button hover gradient light color
+
+//Gradients
+$littleleaf: linear-gradient(to bottom, $olivine 0%, $mantis 100%);
+$littleleaf2: linear-gradient(to bottom, $olivine2 0%, $mantis2 100%);
+$blueskies: linear-gradient(to left, $royalblue 0%, $pictonblue 100%);
+$blueskies2: linear-gradient(to left, $royalblue2 0%, $pictonblue2 100%);
+$blueskies3: linear-gradient(to left, $royalblue3 0%, $pictonblue3 100%);
+$juicyorange: linear-gradient(to left, $yelloworange 0%, $treepoppy 100%);
+$juicyorange2: linear-gradient(to left, $yelloworange2 0%, $treepoppy2 100%);
+$juicyorange3: linear-gradient(to left, $yelloworange3 0%, $treepoppy3 100%);
+$firewatch: linear-gradient(to left, $flamingo 0%, $brickred 100%); //Danger button gradient
+$firewatch2: linear-gradient(to left, $flamingo2 0%, $brickred2 100%); //Danger button gradient hover
+$lush: linear-gradient(to left, $chateaugreen 0%, $apple 100%); //Success button gradient
+$lush2: linear-gradient(to left, $chateaugreen2 0%, $apple2 100%); //Success button gradient hover
+
+//Text Colors
+$primarytext: rgba(0, 0, 0, 0.87);
+$secondarytext: rgba(0, 0, 0, 0.54);
+$disabledtext: rgba(0, 0, 0, 0.38);
+
+//Fonts
+$opensans: 'Open Sans', sans-serif, 'Arial';
+$poppins: 'Poppins', sans-serif, 'Arial';
+$fontawesome: 'FontAwesome';
+
+//Sizes
+$topbarheight: 60px;
+$footerheight: 60px;
+$indexcontentwidth: 620px;
+$sidebarclosebtnwrapper: $topbarheight + 1;
+$sidebarwidth: 300px;
+
+//Shadows
+$navbarshadow: 0px 2px 5px rgba(0, 0, 0, .25);
+$footershadow: 0px -2px 3px rgba(0, 0, 0, .15);
+$actionbuttonshadow: 1px 4px 5px rgba(0, 0, 0, .24);
+$sidebarshadow: 4px 0px 5px rgba(0, 0, 0, .25);
+$bugbuttonshadow: -4px 0px 5px rgba(0, 0, 0, .25);
+$inputhighlight: 0px 0px 10px rgba(251, 159, 31, .54);
+$iconshadow: 0px 0px 0px 32px inset;

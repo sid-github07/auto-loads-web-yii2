@@ -1,0 +1,20 @@
+.datepicker-from {
+    border-radius: 0px !important;
+}
+
+.datepicker-to {
+    border-radius: 0px !important;
+}
+
+.document-container, .input-group.date {
+    .input-group-addon {
+        border-radius: 0px;
+        color: $white;
+        background: $cerulean;
+        height: 40px;
+        transition: background 0.3s;
+        &:hover, &:focus {
+            background: $lochmara;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+//Roundtrips search
+.roundtrip-city-search {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    @include max-width-767 {
+        flex-direction: column;
+    }
+    .form-group {
+        width: 100%;
+    }
+    .search-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0 25px 15px; 
+    }
+}
+
+//Roundtrips results
+.custom-table.roundtrips-table-wrapper {
+    margin: 16px auto 72px auto;
+}
+
+.roundtrip-summary {
+    margin-top: 32px;
+    padding: 24px 12px;
+    border: 1px solid $alto2;
+    background: $white;
+}
+
+.roundtrip-heading {
+    @include font-size(18);
+    font-weight: 700;
+    margin-right: 12px;
+}
+
+.load-city, .unload-city {
+    div {
+        margin-top: 2px;
+        display: inline-block;
+    }
+}
+
+.additional-trip {
+    &:last-child {
+        .fa {
+            display: none;
+        }
+    }
+    .fa {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}

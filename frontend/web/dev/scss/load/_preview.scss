@@ -1,0 +1,71 @@
+.primary-button.search-load-sign-in-btn {
+    display: inline-block;
+    padding: 6px 25px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    @include max-width-767 {
+        padding: 12px 10px;
+    }
+    &:hover, &:focus {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.search-results-load-code {
+    @include font-size(14);
+    color: $secondarytext;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.load-preview-content-heading {
+    @include max-width-767 {
+        margin-top: 25px;
+    }
+}
+
+.load-preview-content {
+    a {
+        color: $yelloworange;
+        display: block;
+        position: relative;
+        top: 1px;
+        transition: color 0.3s;
+        &:hover, &:focus {
+            color: $treepoppy;
+        }
+        .fa {
+            @include font-size(24);
+        }
+    }
+}
+
+.not-logged-in-preview {
+    display: inline-block;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.expanded-load-preview-content {
+    margin-top: -33px;
+    @include max-width-767 {
+        margin-top: -1px;
+    }
+    .load-preview-modal-content-wrapper, .load-info {
+        margin-top: 12px;
+        text-align: left;
+    }
+}
+
+.load-preview-modal-content-wrapper {
+    font-weight: 500;
+}
+
+.load-link-content,
+.car-transporter-link-content {
+    a {
+        color: $yelloworange;
+    }
+}

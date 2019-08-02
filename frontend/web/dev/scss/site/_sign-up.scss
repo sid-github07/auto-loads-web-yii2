@@ -1,0 +1,42 @@
+.natural-container, .legal-container {
+    padding: 16px 0px;
+}
+
+.rules-agreement.custom-checkbox {
+    &:before {
+        position: absolute;
+        top: 5px;
+    }
+    .checkbox {
+        label {
+            padding-left: 25px;
+        }
+    }
+}
+
+//Confirm guidelines
+.rules-agreement.has-error {
+    .checkbox {
+        label {
+            color: $brickred;
+            a {
+                color: $brickred;
+            }
+        }
+    }
+}
+
+.rules-agreement.has-success {
+    .checkbox {
+        label {
+            color: $apple;
+            a {
+                color: $apple;
+            }
+        }
+    }
+}
+
+.sign-up-submit-btn {
+    margin-top: 12px;
+}

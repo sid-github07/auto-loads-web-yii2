@@ -1,0 +1,51 @@
+.site-sign-up, .site-sign-up-invitation {
+    input[type="checkbox"] {
+        display: none;
+    }
+}
+
+.checkbox {
+    label {
+        padding-left: 0px;
+    }
+}
+
+.custom-checkbox {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    &:before {
+        border: 1px solid $alto;
+        content: '';
+        display: inline-block;
+        height: 17px;
+        margin-right: 7px;
+        width: 17px;
+    }
+    &:hover, &:focus {
+        &:before {
+            border: 2px solid $treepoppy;
+        }
+    }
+    .checkbox {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.custom-checkbox.checked {
+    &:before {
+        @include font-size(14);
+        align-items: center;
+        background-color: $treepoppy;
+        border: 1px solid $treepoppy;
+        color: $white;
+        content: '\f00c';
+        display: flex;
+        font-family: $fontawesome;
+        font-weight: lighter;
+        justify-content: center;
+    }
+}

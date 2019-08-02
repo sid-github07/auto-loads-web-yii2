@@ -1,0 +1,175 @@
+//Dropdown
+.select {
+    position: relative;
+    .form-control {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    @-moz-document url-prefix() { 
+        .form-control {
+            text-indent: 3px;
+        }
+    }
+    select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+}
+
+.select-arrow {
+    @include font-size(14);
+    color: $secondarytext;
+    pointer-events: none;
+    position: absolute;
+    right: 27px;
+    top: 37px;
+}
+
+//Default input
+.form-group {
+    margin-bottom: 25px;
+}
+
+.control-label {
+    @include font-size(13);
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+}
+
+.form-control {
+    @include font-size(14);
+    border-radius: 0px;
+    border: 1px solid $alto;
+    box-shadow: none;
+    min-height: 40px;
+    outline: none;
+    padding-left: 0px;
+    text-indent: 10px;
+}
+
+.has-success.form-control, .has-danger.form-control {
+    box-shadow: none;
+}
+
+.help-block {
+    @include font-size(14);
+}
+
+//Required field
+.required {
+    .control-label {
+        &:after {
+            color: $persianred;
+            content: '*';
+        }
+    }
+}
+
+.red-star {
+    color: $persianred;
+}
+
+//VAT code dropdown
+.input-group-btn {
+    .dropdown-toggle.vat-code-flag {
+        height: auto;
+        width: 15%;
+        @include max-width-767 {
+            width: 20%;
+        }
+    }
+}
+
+.form-control.vat-code-input {
+    width: 85%;
+    @include max-width-767 {
+        width: 80%;
+    }
+}
+
+.vat-code-list-dropdown {
+    height: 250px;
+    overflow-x: hidden;
+    top: 37px;
+    width: 100%;
+    .vat-code-list-dropdown-item {
+        a {
+            padding: 5px 20px;
+            &:hover, &:focus {
+                background-color: $cerulean;
+                color: $white;
+            }
+            @include max-width-767 {
+                padding: 13px 20px;
+            }
+        }
+    }
+}
+
+.vat-code-container {
+    z-index: 2;
+}
+
+.page-size-dropdown {
+    @include font-size(14);
+    margin-bottom: -20px;
+    margin-top: 35px;
+    label {
+        margin-right: 10px;
+    }
+    select {
+        padding: 3px 15px 3px 3px;
+        border: 1px solid $alto2;
+    }
+    .select-arrow {
+        right: 5px;
+        top: 5px;
+    }
+}
+
+.required-fields-text {
+    @include font-size(14);
+    margin-bottom: 10px;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.year-select-wrapper {
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin: 24px 0 12px;
+    .select-arrow {
+        right: 7px;
+        top: 5px;
+        z-index: 1;
+    }
+}
+
+.year-select {
+    appearance: none;
+    border: 1px solid $alto;
+    outline: 0;
+    padding: 3px 20px 3px 5px;
+    position: relative;
+}
+
+.vat-code-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 0;
+        @include max-width-1240 {
+            width: 100%;
+        }
+    }
+}

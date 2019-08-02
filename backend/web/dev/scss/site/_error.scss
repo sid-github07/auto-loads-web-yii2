@@ -1,0 +1,43 @@
+.site-error {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.error-page-container {
+    margin-top: -90px;
+    color: $primarytextalt;
+    font-weight: 700;
+    @include max-width-767 {
+        margin-bottom: 45px;
+        margin-top: 35px;
+    }
+}
+
+.error-number {
+    @include font-size(152);
+    font-weight: 700;
+    @include max-width-767 {
+        @include font-size(82);
+    }
+}
+
+.error-message {
+    @include font-size(36);
+    @include max-width-767 {
+        @include font-size(24);
+    }
+}
+
+.error-sub-message {
+    margin-top: 35px;
+    p {
+        color: $secondarytextalt;
+        @include font-size(18);
+        @include max-width-767 {
+            @include font-size(16);
+        }
+    }
+}

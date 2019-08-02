@@ -1,0 +1,180 @@
+//Input style
+.input-group.input-daterange {
+    @include max-width-425 {
+        display: block;
+    }
+    div {
+        border: none;
+    }
+    .kv-container-to {
+        .form-control {
+            border-radius: 0px !important;
+        }
+    }
+}
+
+.input-daterange {
+    input {
+        &:first-child, &:last-child {
+            border-radius: 0px;
+        }
+    }
+}
+
+.datepicker-days {
+    th {
+        padding: 8px;
+    }
+}
+//Datepicker style
+.datepicker {
+    border-radius: 0px;
+    @include max-width-375 {
+        left: 4px !important;
+        &:before,
+        &:after {
+            left: 50% !important;
+            right: 50% !important;
+        }
+    }
+    //Heading
+    table {
+        border-collapse: separate;
+    }
+    @include font-size(14);
+    color: $primarytext;
+    padding: 0px;
+    th.prev, th.next {
+        @include font-size(20);
+        background-color: $yelloworange;
+        border-radius: 0px;
+        color: $yelloworange;
+        height: 42px;
+        visibility: visible !important;
+        width: 42px;
+        &:after {
+            font-family: $fontawesome;
+            @include font-size(16);
+            color: $white;
+            opacity: 0.8;
+            position: relative;
+            right: 6px;
+        }
+        &:hover, &:focus {
+            background-color: $treepoppy !important;
+            color: $yelloworange;
+            &:after {
+                opacity: 1;
+            }
+        }    
+    }
+    th.prev {
+        &:after {
+            content: '\f053';
+        }
+    }
+    th.next {
+        &:after {
+            content: '\f054';
+        }
+    }
+    .datepicker-switch {
+        background-color: $yelloworange;
+        color: $white;
+        border-radius: 0px;
+        @include font-size(15);
+        &:hover, &:focus {
+            background-color: $treepoppy !important;
+            color: $white;
+        }
+    }
+    //Days
+    .dow {
+        width: 42px;
+        height: 42px;
+        color: $secondarytext;
+    }
+    .day {
+        position: relative;
+        width: 42px;
+        height: 42px;
+        font-weight: 600;
+        color: $primarytext;
+        &:hover, &:focus {
+            background: $alabaster3 !important;
+            border-radius: 50%;
+            border: none;
+        }
+    }
+    .old.day {
+        color: $disabledtext;
+        &:hover, &:focus {
+            color: $primarytext;
+        }
+    }
+    .new.day {
+        color: $secondarytext;
+        &:hover, &:focus {
+            color: $primarytext;
+        }
+    }
+    .active.day {
+        background: $treepoppy !important;
+        color: $white;
+        border-radius: 50%;
+        &:hover, &:focus {
+            background: $treepoppy !important;
+            color: $white;
+        }
+    }
+    .selected.day {
+        background: $treepoppy !important;
+        color: $white;
+        border-radius: 0px;
+        &:hover, &:focus {
+            background: $treepoppy !important;
+            color: $white;
+        }
+    }
+    .range.day {
+        background: $alabaster3 !important;
+        color: $primarytext;
+        border-radius: 0px;
+        &:hover, &:focus {
+            background: $alabaster3 !important;
+            color: $primarytext;
+        }
+    }
+    //Months, Years
+    .month, .year, .decade, .century {
+        font-weight: 600;
+        color: $primarytext;
+        &:hover, &:focus {
+            background: $alabaster3 !important;
+            border-radius: 50%;
+            border: none;
+        }
+    }
+    .active.month, .active.year, .active.decade, .active.century {
+        background: $treepoppy !important;
+        color: $white;
+        border-radius: 50%;
+        &:hover, &:focus {
+            background: $treepoppy !important;
+            color: $white;
+        }
+    }
+}
+
+.input-group.date {
+    .input-group-addon {
+        border-radius: 0px;
+        color: $white;
+        background: $yelloworange;
+        height: 40px;
+        transition: all 0.3s;
+        &:hover, &:focus {
+            background: $treepoppy;
+        }
+    }
+}

@@ -1,0 +1,438 @@
+.index.topbar {
+    position: fixed;
+    top: 0;
+    padding-top: 24px;
+    @include max-width-1002 {
+        padding-top: 0px;
+    }
+}
+.topbar {
+    @include font-size(15);
+    position: relative;
+    padding-top: 24px;
+    width: 100%;
+    z-index: 1040;
+    @include max-width-1002 {
+        @include font-size(16);
+        background: $white;
+        box-shadow: $navbarshadow;
+        height: $topbarheight;
+        padding-top: 0;
+        margin-top: 0px;
+        position: fixed;
+    }
+    .navbar-collapse{
+        @include max-width-1002 {
+            border-top: 1px solid $alto2;
+            background: $white;
+        }
+    }
+    .collapsing {
+        margin-top: -3px;
+        padding: 0px;
+        width: 100%;
+    }
+    .dropdown-menu {
+        border-radius: 0;
+        @include max-width-1002 {
+            @include font-size(16);
+            padding: 0px;
+            position: relative;
+            width: 100%;
+            li {
+                a {
+                    background: $white;
+                    padding: 11px 50%;
+                    margin-left: -54px;
+                }
+            }
+        }
+    }
+}
+
+.logged-in.topbar {
+    background: $white;
+    box-shadow: $navbarshadow;
+    height: $topbarheight;
+    margin-top: 0px;
+    padding-top: 0;
+    position: fixed;
+    .navbar-nav {
+        li {
+            a {
+                padding: 19px 17px;
+                @include max-width-1002 {
+                    padding: 12px 17px;
+                }
+            }
+            .dropdown-menu {
+                a {
+                    padding: 7px 15px;
+                }
+            }
+        }
+        .menu-btn {
+            a {
+                border-radius: 5px;
+                color: $white;
+                padding: 7px 12px;
+                &:hover, &:focus {
+                    background: $olivine2;
+                    background: $littleleaf2;
+                }
+                @include max-width-1002 {
+                    background: $white;
+                    color: $primarytext;
+                    margin: 0px;
+                    padding: 12px 12px;
+                    &:hover, &:focus {
+                        background: $alabaster2;
+                        color: $treepoppy;
+                    }
+                }
+            }
+        }
+        .menu-item {
+            border: none;
+            &:hover, &:focus {
+                background: none;
+                border-bottom: 2px solid $treepoppy;
+            }
+            @include max-width-1002 {
+                &:hover, &:focus {
+                    border-bottom: 0px;
+                }
+            }
+            a {
+                &:hover, &:focus {
+                    color: $treepoppy;
+                }
+            }
+        }
+        .language-dropdown-menu.open {
+            border-bottom: 2px solid $treepoppy;
+            @include max-width-1002 {
+                border-bottom: none;
+            }
+            .dropdown-toggle {
+                background: none;
+                color: $treepoppy;
+                &:hover, &:focus {
+                    background: none;
+                    color: $treepoppy;
+                }
+                @include max-width-1002 {
+                    background: $alabaster2;
+                    border-bottom: 1px solid $alto2;
+                    color: $treepoppy;
+                    &:hover, &:focus {
+                        background: $alabaster2;
+                        border-bottom: 1px solid $alto2;
+                        color: $treepoppy;
+                    }
+                }
+            }
+        }
+        .open {
+            .dropdown-menu{
+                li {
+                    a {
+                        @include max-width-767 {
+                            margin-left: -54px;
+                            padding: 12px 50%;
+                        }
+                    }
+                }
+            }
+        }
+        .dropdown-menu {
+            @include max-width-1002 {
+                border: none;
+            }
+            li {
+                a {
+                    @include max-width-1002 {
+                        padding: 11px 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-right {
+    margin-right: 0px;
+}
+
+.navbar-nav {
+    li {
+        a {
+            border-radius: 0;
+            color: $primarytext;
+            font-weight: 700;
+            outline: 0;
+            padding: 10px 17px;
+            position: relative;
+            transition: all .2s;
+            &:hover, &:focus {
+                background: none;
+                color: $treepoppy;
+            }
+            @include max-width-1002 {
+                border-bottom: 1px solid $alto2;
+                padding: 12px 17px;
+                &:hover, &:focus {
+                    background: $alabaster;
+                }
+            }
+            .fa {
+                margin-right: 5px;
+            }
+        }
+    }
+    .language-dropdown-menu {
+        border: 1px solid $primarytext;
+        &:hover, &:focus {
+            background: $treepoppy;
+            border-color: $treepoppy;
+        }
+        @include max-width-1002 {
+            border: none;
+            &:hover, &:focus {
+                background: $alabaster2;
+                border: none;
+            }
+        }
+        .flag-icon {
+            margin-right: 5px;
+        }
+        .dropdown-toggle {
+            &:hover, &:focus {
+                color: $white;
+            }
+            @include max-width-1002 {
+                &:hover, &:focus {
+                    color: $treepoppy;
+                }
+            }
+        }
+    }
+    .language-dropdown-menu.open {
+        border-color: $treepoppy;
+        .dropdown-toggle {
+            background: $treepoppy;
+            color: $white;
+            &:hover, &:focus {
+                background: $treepoppy;
+                color: $white;
+            }
+            @include max-width-1002 {
+                background: $alabaster2;
+                border-bottom: 1px solid $alto2;
+                color: $treepoppy;
+                &:hover, &:focus {
+                    background: $alabaster2;
+                    border-bottom: 1px solid $alto2;
+                    color: $treepoppy;
+                }
+            }
+        }
+    }
+    .greeting-message {
+        @include max-width-1310 {
+            display: none;
+        }
+        a {
+            @include font-size(14);
+            font-weight: 600;
+            &:hover, &:focus {
+                cursor: text;
+                color: $primarytext;
+            }
+        }
+    }
+    .open {
+        .dropdown-menu{
+            li {
+                a {
+                    @include max-width-767 {
+                        margin-left: -54px;
+                        padding: 12px 50%;
+                    }
+                }
+            }
+        }
+    }
+    .brand {
+        @include font-size(14);
+        list-style-type: none;
+        text-align: center;
+        font-family: $poppins;
+        @include max-width-1002 {
+            display: none;
+        }
+        .topbar-home {
+            padding: 0px;
+            &:hover, &:focus {
+                color: $bigstone;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.brand-item {
+    padding-left: 0px;
+    position: fixed;
+}
+
+.sidebar-menu-toggle {
+    display: none;
+    @include max-width-1002 {
+        @include font-size(20);
+        color: $primarytext;
+        display: inline-block;
+        padding: 16px 10px;
+        margin: 0px 0px 0px 15px;
+        &:hover, &:focus {
+            color: $treepoppy;
+        }
+    }
+    @include max-width-425 {
+        margin: 0px;
+        margin: 0px 0px 0px 5px;
+    }
+}
+
+.navbar-toggle {
+    @include font-size(20);
+    margin: 0px 15px 0px 0px;
+    padding: 15px 10px;
+    &:hover, &:focus {
+        color: $treepoppy;
+    }
+    @include max-width-425 {
+        margin: 0px 5px 0px 0px;
+    }
+}
+
+.site-logo-main {
+    width: 180px;
+}
+
+.topbar-home-mobile {
+    display: none;
+    @include max-width-1002 {
+        @include font-size(14);
+        color: $bigstone;
+        display: inline-block;
+        font-family: $poppins;
+        font-weight: 700;
+        left: 50%;
+        top: 2px;
+        margin-left: -125px;
+        position: absolute;
+        text-align: center;
+        &:hover, &:focus {
+            color: $bigstone;
+            text-decoration: none;
+        }
+    }
+    @include max-width-425 {
+        @include font-size(11);
+        margin-left: -100px;
+        top: 7px;
+    }
+}
+
+.mobile-site-logo {
+    width: 160px;
+    @include max-width-425 {
+        width: 150px;
+    }
+}
+
+//Topbar responsive
+.topbar .navbar-collapse.collapse {
+    @include max-width-1002 {
+        display: none !important;
+        padding: 0px;
+    }
+}
+
+.topbar .navbar-collapse.collapse.in {
+    @include max-width-1002 {
+        display: block !important;
+    }
+}
+.topbar .navbar-collapse {
+    @include max-width-1002 {
+        text-align: center;
+        display: block !important;
+    }
+}
+.topbar .navbar-header {
+    @include max-width-1002 {
+        float: none;
+        display: block !important;
+    }
+}
+.topbar .navbar-nav {
+    @include max-width-1002 {
+        margin: 0px auto;
+        float: none !important;
+        vertical-align: top;
+    }
+    @include max-width-767 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    li {
+        @include max-width-1002 {
+            float: none;
+        }
+    }
+}
+.navbar-toggle {
+    display: none;
+    @include max-width-1002 {
+        display: block;
+    }
+}
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    @include max-width-1150 {
+        left: 45%;
+    }
+    .orange-text {
+        a {
+            color: $treepoppy;
+        }
+    }
+    .blue-text {
+        color: $bigstone;
+        a {
+            color: $bigstone;
+            &:hover, &:focus {
+                color: $primarytext;
+            }
+        }
+    }
+    li.disabled {
+        a {
+            color: rgba(0,0,0,.22);
+            &:hover, &:focus {
+                color: rgba(0,0,0,.22);
+            }
+        }
+    }
+    li.active {
+        a {
+            border-bottom: 2px solid $treepoppy;
+            color: $treepoppy;
+        }
+    }
+}

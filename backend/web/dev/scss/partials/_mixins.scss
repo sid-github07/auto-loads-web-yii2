@@ -1,0 +1,14 @@
+@mixin font-size($sizeValue: 16 ){
+  font-size: $sizeValue + px; //fallback for old browsers
+  font-size: (0.0625 * $sizeValue) + rem;
+}
+
+@mixin prefix-user-select($parameter) {
+  -webkit-touch-callout: $parameter; /* iOS Safari */
+  -webkit-user-select:   $parameter; /* Safari */
+  -khtml-user-select:    $parameter; /* Konqueror HTML */
+  -moz-user-select:      $parameter; /* Firefox */
+  -ms-user-select:       $parameter; /* Internet Explorer/Edge */
+  user-select:           $parameter; /* Non-prefixed version, currently
+                                        supported by Chrome and Opera */
+}

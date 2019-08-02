@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+//Fonts
+$opensans: 'Open Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$poppins: 'Poppins', sans-serif;
+$glyphicons: 'Glyphicons Halflings';
+$fontawesome: 'FontAwesome';
+
+//Heights
+$topbarHeight: 60px;
+
+//Colors
+$white: #fff;
+$alabaster: #fafafa; //Form Background
+$alabaster2: #eee; //Border
+$alabaster3: #f5f5f5;
+$alabaster4: darken(#f5f5f5, 7%); //Menu hover
+$alabaster5: darken(#f5f5f5, 5%); //Active menu
+$alabaster6: #f9f9f9;
+$alto: #ddd;
+$alto2: #ccc;
+$boulder: #777777;
+$cerulean: #0277BD; //Primary blue
+$lochmara: #01579B;
+$sunshade: #FFA726; //Secondary orange
+$orangepeel: #FB8C00;
+$bigstone: #1b2c42; //Logo subtext
+$mineshaft: #424242; 
+$dovegray: #676767; //Text
+$persianred: #D32F2F; //Required
+$seagreen: #2E7D32; //Success
+$tiamaria: #D84315; //Danger
+$chromewhite: #DCEDC8; //Invoice paid color
+$seapink: #FFCDD2; //Unpaid invoice color
+
+$primarytext: rgba(0, 0 , 0, 0.87);
+$secondarytext: rgba(0, 0, 0, 0.54);
+$primarytextalt: rgba(255, 255 , 255, 0.87);
+$secondarytextalt: rgba(255, 255, 255, 0.54);
+$disabledtext: rgba(0, 0, 0, 0.38);

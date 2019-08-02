@@ -1,0 +1,88 @@
+.site-index {
+    margin-top: -60px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    @include max-width-1002 {
+        margin-top: 0;
+    }
+}
+
+.site-index.logged-in {
+    margin-top: 0px;
+    padding-bottom: 10%;
+}
+
+.index-logo-link {
+    display: inline-block;
+    margin-bottom: 60px;
+    outline: 0;
+    text-align: center;
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+}
+
+.index-site-logo {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 500px;
+    @include max-width-767 {
+        width: 240px;
+    }
+}
+
+.index-site-logo-subtext {
+    font-family: $poppins;
+    font-weight: 700;
+    @include font-size(19);
+    color: $bigstone;
+    @include max-width-767 {
+        @include font-size(14);
+    }
+}
+
+.load-car-totals {
+    text-align: left;
+    padding-left: 18px;
+    margin-bottom: 25px;
+    white-space: nowrap;
+    @include font-size(17);
+    font-weight: 700;
+}
+
+.load-car-totals-title {
+    display: inline-block;
+}
+   
+.load-loads-link {
+    text-decoration: underline;
+}
+
+.vehicle-number {
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 6px;
+    @include font-size(21);
+    &.ready {
+        color: $curiousblue;
+    }
+    &.transported {
+        color: $treepoppy2;
+    }
+}
+
+.action-button-wrapper {
+    margin-bottom: 25px;
+}
+
+#loads-tooltip-inner {
+    background: #515151;
+    border: 1px solid #515151;
+    padding: 5px 10px;
+}
+
+#loads-tooltip-arrow {
+    border-top-color: #515151;
+}

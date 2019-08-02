@@ -1,0 +1,85 @@
+.wizard-element-circle.finished-step, .wizard-line-between-containers.finished-step {
+    color: $yelloworange;
+    border-color: $yelloworange;
+}
+
+@media screen and (min-width:0\0) and (min-resolution:.001dpcm) { 
+    .wizard-elements-container { 
+        margin-bottom: 25px;
+    } 
+}
+
+@media screen and (min-width:0\0) and (min-resolution:.001dpcm) { 
+    .wizard-container { 
+        display: none;
+    } 
+}
+
+.wizard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0 32px 0;
+}
+
+.wizard-element {
+    display: block;
+    float: left;
+}
+
+.wizard-line-between-containers {
+    border-top: 4px solid $alto;
+    width: 12%;
+    display: inline-block;
+}
+
+.wizard-element-circle, .wizard-element-circle-h {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    width: 65px;
+    border: 4px solid $alto;
+    border-radius: 100%;
+    color: $alto;
+    i.fa {
+        @include font-size(34);
+    }
+    i.fa-credit-card-alt {
+        @include font-size(26);
+    }
+}
+
+.wizard-element-circle-h {
+    margin: auto;
+    position: relative;
+    top: 32px;
+}
+
+.wizard-h-wrapper {
+    margin-bottom: 36px;
+}
+
+.wizard-card {
+    position: relative;
+    background: $white;
+    padding: 24px 16px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 2px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+}
+
+.wizard-card--lower-addon {
+    .select-addon {
+        .fa {
+            top: 59px;
+            right: 17px;
+        }
+    }
+}
+
+.wizard-card--darken {
+    background: #efefef;
+}
+
+.wizard-icon-no-padding {
+    padding: 0;
+}

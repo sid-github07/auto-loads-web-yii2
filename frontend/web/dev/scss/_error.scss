@@ -1,0 +1,75 @@
+.error-message-wrap {
+    margin-top: 30px;
+    background-color: $white;
+    border: 1px solid $alto2;
+    padding: 20px;
+
+}
+
+.error-message-wrapper {
+    max-width: 1010px;
+    margin: 0 auto;
+}
+
+.error-404 {
+    @include font-size(128);
+    font-weight: 700;
+    text-align: center;
+    line-height: 86px;
+    @include max-width-767 {
+        @include font-size(92);
+    }
+}
+
+.error-main-message {
+    @include font-size(30);
+    font-weight: 600;
+    text-align: center;
+    margin: 25px 0 30px 0;
+    &:after {
+        content: '';
+        display: block;
+        margin: 10px auto 0 auto;
+        border-bottom: 4px solid $primarytext;
+        width: 50px;
+    }
+    @include max-width-767 {
+        @include font-size(24);
+    }
+}
+
+#error-image {
+    display: block;
+    width: 210px;
+    margin: 20px auto 0 auto;
+    @include max-width-767 {
+        margin-bottom: 60px;
+        width: 160px;
+    }
+}
+
+.error-message-container {
+    margin-top: 70px;
+    @include max-width-767 {
+        margin: 0px auto;
+    }
+}
+
+.error-sub-message-container {
+    display: inline-block;
+    margin-top: 40px;
+    @include max-width-767 {
+        margin: 0px auto 30px auto;
+    }
+}
+
+.error-sub-message {
+    @include font-size(20);
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    @include max-width-767 {
+        @include font-size(16);
+    }
+}

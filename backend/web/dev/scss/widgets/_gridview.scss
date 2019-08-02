@@ -1,0 +1,412 @@
+.custom-gridview, .custom-table {
+    margin-left: -20px;
+    margin-right: -20px;
+    border: none;
+    @include font-size(14);
+    @include max-width-767 {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .summary {
+        text-align: right;
+        color: $secondarytext;
+        @include font-size(13);
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+    table {
+        border: none;
+        border-bottom: 1px solid $alto2;
+        thead {
+            tr {
+                border-left: none;
+                border-right: none;
+                color: $secondarytext;
+                th {
+                    padding-left: 25px;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    border-left: none;
+                    border-right: none;
+                    font-weight: 600;
+                    @include max-width-767 {
+                        padding-left: 15px;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                border-left: none;
+                border-right: none;
+                color: $primarytext;
+                td {
+                    padding-left: 25px;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    border-left: none;
+                    border-right: none;
+                    font-weight: 500;
+                    @include max-width-767 {
+                        padding-left: 15px;
+                    }
+                    a {
+                        color: $cerulean;
+                        &:hover, &:focus {
+                            color: $lochmara;
+                        }
+                    }
+                    .radius-btn {
+                        color: $white;
+                        &:hover, &:focus {
+                            color: $white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .preview-column-content {
+                    a {
+                        @include font-size(20);
+                        color: $sunshade;
+                        &:hover, &:focus {
+                            color: $orangepeel;
+                        }
+                    }
+                }
+                .preview-icon {
+                    padding: 12px;
+                    color: $sunshade;
+                    &:hover, &:focus {
+                        color: $orangepeel;
+                    }
+                }
+            }
+            .pre-invoice {
+                .preview-icon {
+                    color: $secondarytext;
+                    &:hover, &:focus {
+                        color: $primarytext;
+                    }
+                }
+            }
+            .paid {
+                background-color: $chromewhite !important;
+            }
+            .not-paid {
+                background-color: $seapink !important;
+            }
+        }
+    }
+}
+
+.table-responsive {
+    @include max-width-767 {
+        width: auto;
+    }
+}
+
+.pagination {
+    @include font-size(14);
+    .prev.disabled, .first.disabled, .next.disabled, .last.disabled {
+        span {
+            display: none;
+        }
+    }
+    li {
+        color: $boulder;
+        a {
+            outline: 0;
+            text-decoration: none;
+            color: $boulder;
+            &:hover, &:focus {
+                text-decoration: none;
+            }
+        }
+        &:first-child {
+            a, span {
+                border-radius: 0px;
+            }
+        }
+        &:last-child {
+            a, span {
+                border-radius: 0px;
+            }
+        }
+    }
+    li.active {
+        a {
+            background-color: $cerulean;
+            border: 1px solid $cerulean;
+            color: $white;
+            &:hover, &:focus {
+                background-color: $cerulean;
+                border: 1px solid $cerulean;
+                color: $white;
+            }
+        }
+    }
+}
+
+.loads-list-gridview {
+    table {
+        tbody {
+            tr {
+                &:nth-child(4n+1) {
+                    background: $white;
+                }
+            }
+        }
+    }
+}
+
+
+.subscription-list-gridview {
+    table {
+        tbody {
+            tr {
+                &:nth-child(4n+2) {
+                    background: $alabaster6;
+                }
+                &:nth-child(4n+3) {
+                    background: $white;
+                }
+            }
+        }
+    }
+}
+
+.load-preview-content-heading, .load-preview-contacts-heading {
+    font-weight: 600;
+    @include max-width-767 {
+        margin-top: 24px;
+    }
+}
+
+.separator {
+    &:last-child {
+        display: none;
+    }
+}
+
+.search-results-load-code {
+    @include font-size(14);
+    color: $secondarytext;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.load-preview-row {
+    td {
+        position: relative;
+    }
+}
+
+.city-column-content {
+    div {
+        text-align: left;
+    }
+    span {
+        text-align: center;
+        &:last-child {
+            display: none;
+        }
+    }
+}
+
+.bill-list-gridview, .planned-income-gridview {
+    margin-top: 20px;
+    text-align: center;
+    .action-column {
+        width: 5%;
+        padding: 12px;
+        @include max-width-1240 {
+            width: 7%;
+        }
+    }
+    tbody {
+        tr {
+            td {
+                vertical-align: middle;
+                border: 1px solid $alto2;
+            }
+        }
+        .invoice {
+            background-color: $chromewhite !important;
+        }
+        .pre-invoice {
+            background-color: $seapink !important;
+        }
+    }
+    tfoot {
+        tr {
+            border: none;
+            td {
+                border: none;
+            }
+        }
+    }
+}
+
+.planned-income-gridview {
+    tbody {
+        .has-subscription {
+            background-color: $chromewhite !important;
+        }
+        .no-subscription {
+            background-color: $seapink !important;
+        }
+    }
+}
+
+.paid-bills-container, .unpaid-bills-container, .planned-income-container {
+    @include font-size(24);
+}
+
+.total-price-label {
+    @include font-size(14);
+    color: $secondarytext;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+// Responsive table without grid
+.responsive-table-wrapper {
+    table {
+        @include max-width-767 {
+            border: none;
+        }
+    }
+}
+
+.responsive-table {
+    width: 100%;
+    thead {
+        @include max-width-767 {
+            display: none;
+        }
+    }
+    tbody {
+        display: table-row-group;
+        @include max-width-767 {
+            display: block;
+            padding: 0;
+            text-align: left;
+            white-space: normal;
+        }
+    }
+    tr {
+        display: table-row;
+        @include max-width-767 {
+            display: block;
+            margin-bottom: 32px;
+            padding: 0;
+            text-align: left;
+            white-space: normal;
+            border-bottom: 1px solid $alto2;
+            border-left: 1px solid $alto2;
+            border-right: 1px solid $alto2;
+        }
+    }
+    td {
+        display: table-cell;
+        vertical-align: middle;
+        @include max-width-767 {
+            @include font-size(18);
+            border-top: 1px solid $alto2;
+            display: block;
+            padding: 0 6px;
+            text-align: right;
+            white-space: normal;
+            width: 100%;
+        }
+    }
+    td[data-title]:before {
+        content: none;
+        @include max-width-767 {
+            @include font-size(16);
+            color: $secondarytext;
+            content: attr(data-title);
+            float: left;
+            line-height: 27px;
+            padding: 0 6px;
+        }
+    }
+    .single-action-column {
+        text-align: center;
+        @include max-width-767 {
+            padding: 0;
+            text-align: center;
+        }
+        a {
+            color: $secondarytext;
+            display: block;
+            &:hover, &:focus {
+                color: $primarytext;
+                text-decoration: none;
+            }
+            @include max-width-767 {
+                padding: 12px 0;
+            }
+        }
+        .fa {
+            @include font-size(21);
+            display: block;
+            line-height: 28px;
+            @include max-width-767 {
+                @include font-size(26);
+            }
+        }
+    }
+    .city-column-content {
+        div {
+            @include max-width-767 {
+                text-align: right;
+            }
+        }
+    }
+    .action-column {
+        @include max-width-767 {
+            width: 100%;
+            .radius-btn {
+                padding: 0 4px;
+            }
+        }
+    }
+    .expanded-row-content {
+        width: 100%;
+        &:nth-child(4n+4) {
+            background: $alabaster6;
+        }
+        @include max-width-767 {
+            margin-top: -32px;
+            border: none;
+            border-bottom: 1px solid $alto;
+            td {
+                text-align: left;
+                border: none;
+            }
+        }
+    }
+    .credit-content-row {
+        @include max-width-767 {
+            margin-top: -32px;
+            td {
+                border-top: none;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.responsive-table.table-bordered {
+    tbody {
+        tr {
+            td {
+                border: none;
+                border-top: 1px solid $alto2;
+                word-break: break-word;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.cartransport-preview-container div {
+    float:left;
+}
+.cartransport-preview-container > div {
+    margin: auto 10px;
+}
+.search-load-guest-preview-col {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.search-load-guest-preview-buy-credits-btn,
+.search-load-guest-preview-sign-in-btn {
+    margin-left: 10px;
+    @include max-width-767 {
+        margin-left: 0px;
+    }
+}
+.search-load-guest-preview-text {
+    height: 40px;
+    font-weight: bold;
+}
+.search-load-guest-preview-help-block {
+    margin-bottom: 0px;
+    text-align: right;
+}
+.search-load-guest-preview-form-group {
+    margin-bottom: 0px;
+}
+@media (max-width: 767px) {
+    .search-load-guest-preview-col,
+    .search-load-guest-preview-form-group {
+        width: 100%;
+    }
+    .search-load-guest-preview-col + .search-load-guest-preview-col {
+        margin-top: 0px;
+    }
+}

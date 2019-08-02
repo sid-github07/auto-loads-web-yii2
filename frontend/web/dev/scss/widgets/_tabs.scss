@@ -1,0 +1,91 @@
+.nav-tabs.tabs-navigation {
+    position: relative;
+    border-bottom: 2px solid $alto2;
+    @include max-width-767 {
+        border-bottom: none;
+    }
+    li.active {
+        a {
+            border: none;
+            border-bottom: 2px solid $treepoppy;
+            color: $primarytext;
+            &:hover, &:focus {
+                background: transparent;
+                color: $primarytext;
+            }
+            @include max-width-767 {
+                border: 1px solid $treepoppy;
+            }
+        }
+    }
+    li {
+        margin-bottom: -2px;
+        @include max-width-767 {
+            width: 100%;
+        }
+        a {
+            outline: 0;
+            color: $disabledtext;
+            background: transparent;
+            border-radius: 0px;
+            border: none;
+            border-bottom: 2px solid $alto2;
+            margin-right: 0px;
+            &:hover, &:focus {
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid $treepoppy;
+                color: $secondarytext;
+            }
+            @include max-width-767 {
+                background: $alabaster;
+                width: 100%;
+                text-align: center;
+                border: 1px solid $alto2;
+                margin-bottom: 12px;
+                &:hover, &:focus {
+                    border: 1px solid $treepoppy;
+                }
+            }
+            .fa {
+                @include font-size(20);
+                position: relative;
+                top: 1px;
+                margin-right: 5px;
+            }
+            .fa-user-o {
+                @include font-size(18);
+            }
+        }
+    }
+}
+
+.nav-tabs.nav-justified.tabs-navigation {
+    border-bottom: none;
+    .active {
+        a {
+            &:hover, &:focus {
+                border: none;
+                border-bottom: 2px solid $treepoppy;
+            }
+            @include max-width-767 {
+                border: 1px solid $treepoppy;
+                &:hover, &:focus {
+                    border: 1px solid $treepoppy;
+                }
+            }
+        }
+    }
+    li {
+        a {
+            white-space: nowrap;
+            @include max-width-767 {
+                white-space: normal;
+            }
+        }
+    }
+}
+
+.tab-content {
+    margin-top: 24px;
+}

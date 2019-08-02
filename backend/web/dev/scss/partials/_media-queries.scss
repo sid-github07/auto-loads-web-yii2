@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+//Window sizes
+$size-1240: 1240px;
+$size-1100: 1100px;
+$size-991: 991px;
+$size-767: 767px;
+$size-500: 500px;
+$size-425: 425px;
+
+@mixin max-width-1240 {
+    @media (max-width: #{$size-1240})  {
+        @content;
+    }
+}
+
+@mixin max-width-1100 {
+    @media (max-width: #{$size-1100})  {
+        @content;
+    }
+}
+
+@mixin max-width-991 {
+    @media (max-width: #{$size-991})  {
+        @content;
+    }
+}
+
+@mixin max-width-767 {
+    @media (max-width: #{$size-767})  {
+        @content;
+    }
+}
+
+@mixin max-height-500 {
+    @media (max-height: #{$size-500})  {
+        @content;
+    }
+}
+
+@mixin max-width-425 {
+    @media (max-width: #{$size-425})  {
+        @content;
+    }
+}

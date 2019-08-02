@@ -1,0 +1,10 @@
+prod:
+    hostname: auto-loads.com
+    user: al-prod
+    stage: prod
+    deploy_path: /home/al-prod/web
+dev:
+    hostname: dev.auto-loads.com
+    user: al-dev
+    stage: dev
+    deploy_path: /home/al-dev/web

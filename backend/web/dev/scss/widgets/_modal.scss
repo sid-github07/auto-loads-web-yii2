@@ -1,0 +1,56 @@
+.modal {
+    .modal-dialog {
+        .modal-content {
+            border-radius: 0px;
+            .modal-header {
+                position: relative;
+                background: $alabaster;
+                color: $secondarytext;
+                padding: 20px 50px 15px 20px;
+                @include font-size(22);
+                font-weight: 600;
+                .close {
+                    margin-top: -17px;
+                }
+            }
+        }
+    }
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.close {
+    outline: 0;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    @include font-size(34);
+}
+
+.modal-form-footer, .modal-form-footer-center {
+    margin-top: 30px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px;
+    text-align: right;
+    border-top: 1px solid $alto;
+}
+
+.modal-form-footer-center {
+    text-align: center;
+    button {
+        margin-left: 10px;
+        margin-right: 10px;
+        @include max-width-767 {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.yes-btn, .no-btn {
+    width: 105px;
+}

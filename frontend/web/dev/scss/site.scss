@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/media-queries';
+@import 'modules/buttons';
+@import 'modules/checkbox';
+@import 'modules/containers';
+@import 'modules/form';
+@import 'modules/icons';
+@import 'modules/paginator';
+@import 'modules/radio';
+@import 'modules/text';
+@import 'error';
+@import 'layout/footer';
+@import 'layout/index';
+@import 'layout/main';
+@import 'layout/sidebar';
+@import 'layout/subscription-reminder';
+@import 'layout/topbar';
+@import 'load/announce-load';
+@import 'load/my-loads';
+@import 'load/preview';
+@import 'load/guest-preview';
+@import 'load/roundtrips';
+@import 'load/search';
+@import 'load/suggestions';
+@import 'settings/document-upload';
+@import 'settings/settings';
+@import 'settings/sign-up-invitation';
+@import 'site/about-us';
+@import 'site/guidelines';
+@import 'site/help';
+@import 'site/how-to-use';
+@import 'site/imprint';
+@import 'site/index';
+@import 'site/login';
+@import 'site/reset-password';
+@import 'site/sign-up';
+@import 'subscription/active-services';
+@import 'subscription/service-wizard';
+@import 'subscription/subscription-index';
+@import 'subscription/subscription-new-service-order';
+@import 'subscription/subscription-service-confirmation';
+@import 'subscription/subscription-service-purchase';
+@import 'widgets/cookies-banner';
+@import 'widgets/datepicker';
+@import 'widgets/gridview-table';
+@import 'widgets/modal';
+@import 'widgets/phone-widget';
+@import 'widgets/select2-inputs-style';
+@import 'widgets/tabs';
+@import 'widgets/toast-alert';
+
+html,
+body {
+    background-color: $alabaster2;
+    color: $primarytext;
+    font-family: $opensans;
+    font-size: 16px;
+    font-weight: 600;
+    height: 100%;
+    line-height: 28px;
+    width: 100%;
+}
+
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.highlight-orange {
+    color: $yelloworange;
+}
+
+.map-wrapper {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.map-legend {
+    @include font-size(12);
+    background: $white;
+    border: 1px solid $alto;
+    bottom: 40px;
+    left: 5px;
+    padding: 6px 8px 6px 6px;
+    position: absolute;
+    width: auto;
+    @include max-width-767 {
+        display: none;
+    }
+}
+
+.load-city-map {
+    width: 300px;
+    height: 300px;
+    @include max-width-767 {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.map-text {
+    font-size: 11px;
+}
+
+.load-info {
+    margin-top: 18px;
+    font-weight: 500;
+}
+
+//Popover
+.select2-container--krajee {
+    .popover {
+        max-height: 500px;
+        max-width: 500px;
+    }
+}
+.popover {
+    .popover-title {
+        font-family: $opensans;
+        @include font-size(14);
+        font-weight: 700;
+    }
+    .popover-content {
+        font-family: $opensans;
+        @include font-size(14);
+    }
+}
+
+.tooltip.top {
+    .tooltip-arrow {
+        border-top-color: $primarytext;
+        opacity: 0.9;
+    }
+    .tooltip-inner {
+        opacity: 0.9;
+        background-color: $primarytext;
+        border: 1px solid $primarytext;
+        color: $white;
+        padding: 5px;
+        width: 100%;
+        max-width: 300px;
+        white-space: nowrap;
+    }
+}
+
+.table-responsive {
+    table {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.hide-desktop {
+    display: none;
+    @include max-width-767 {
+        display: block;
+    }
+}
+.adv-credits-cost {
+    display: block;
+    width: 100%;
+    padding-top: 0.5em;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: right;
+}
+
+.adv-total-credit {
+    display: block;
+    width: 100%;
+    font-size: 0.8em;
+    color: darkgray;
+    text-align: right;
+}
+.adv-total-credits-topup {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+.adv-open-contacts-cost {
+    background-color: #eee;
+    padding: 8px 15px;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.red-star {
+    color: red;
+}
+.adv-icon {
+    margin-top: 15px;
+    position: relative;
+    display: inline-block;;
+    height: 100%;
+    width: 100%;
+    font-size: 4em;
+}
+
+.stats-wrap {
+    padding-bottom: 2em;
+}
+
+.load-cars {
+  display: inline;
+  position: relative;
+  bottom: 5px;
+  left: 5px;
+}
+
+.orange-border {
+    border: solid orange !important;
+}
+
+.blue-border {
+    border: solid $pictonblue !important;
+}
+
+.option-div {
+    min-width: 100px;
+}
+.option-div > a, .option-div > p {
+    display: inline-block !important;
+    padding-left: 5px;
+}
+.announcement-text:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nonsub-preview {
+    margin-top: 15px;
+}
+.map-button {
+    display:block;
+}
+
+.map-button:hover {
+    text-decoration: underline;
+}
+
+.subscription-reminder {
+    $height: 840px;
+    $margin: 80px;
+    @media (max-height: $height) {
+        margin-top: $margin;
+    }
+    @media (max-height: $height - 100) {
+        margin-top: $margin*3;
+    }
+    @media (max-height: $height - 200) {
+        margin-top: $margin*4;
+    }
+    @media (max-height: $height - 300) {
+        margin-top: $margin*5;
+    }
+    @media (max-height: $height - 400) {
+        margin-top: $margin*6;
+    }
+}
+
+.adv-card {
+    margin-bottom: 30px;
+}
+.disabled-btn{
+    opacity: 0.5;
+}
+.wizard-card-title {
+    text-align: left;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+.btn-text {
+    display: inline-block;
+    color: grey;
+
+}
+.btn-text:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.color-black {
+    color: black;
+}
+.margin-right-5 {
+    margin-right: 5px;
+}
+.btn-icon:hover {
+    cursor: pointer;
+}
+.send-mail-service {
+    font-size:30px!important;
+    width:100%;
+    text-align:center;
+}
+.send-mail-text {
+    font-size: 9px;
+    width:100%;
+    text-align:center;
+}
+#email-updated,#alert-sent-mail {
+    background-color:#5cb85c;
+    vertical-align:middle;
+    border-radius:10px;
+    padding:15px 0 1px 10px;
+    text-align:center;
+    color:#fff;
+}
+#user-log-table thead {
+    background-color:#eee;
+}
+#user-log-table thead tr th {
+    padding:0px 15px 15px;
+}
+.filter-loads-div {
+    border:1px solid #999;
+    padding:10px;
+}
+.search-created-at-column.text-left.remove-row-loads {
+    padding:2px 0px 0px 5px;
+    vertical-align:baseline;
+}
+#alert-danger-mail {
+    background-color:#f8d7da;
+    vertical-align:middle;
+    border-radius:10px;
+    padding:15px 0 1px 10px;
+    text-align:center;
+    color:#fff;
+}
+.send-email-td {
+    width: 200px;
+    text-align: center;
+}
+th#send-email-th {
+    text-align:center;
+}
+.round-circle {
+    background-color:red;
+    color:#fff;
+    border-radius:30%;
+    text-align:center;
+    font-size:14px;
+    padding:0px 6px 0px 6px;
+    width:max-content;
+}
+.send-email-td span {
+    float:left;
+}
+.send-sms-span {
+    margin-left:30%;
+}
+.pull-right-close {
+    float:right;
+    font-size:18px;
+    color:#999;
+    cursor:pointer;
+}
+.load-user-email {
+    cursor:pointer;
+}
+.send-mail-text.fa.fa-mobile {
+    width:50%;
+    font-size:11px;
+}
+.send-mail-text.fa.fa-envelope-o {
+    font-size:11px;
+}
+.send-mail-text.fa.fa-envelope-o:before {
+    display: block;
+    font-size: 30px;
+}
+.send-mail-text.fa.fa-mobile:before {
+    display: block;
+    font-size: 30px;
+}
+.pull-right.text-primary.load-user-email {
+    position: relative;
+    top: 7px;
+    padding: 5px 10px 9px 0px;
+}
+.btn.close-popover {
+    margin-left: 5px;
+}

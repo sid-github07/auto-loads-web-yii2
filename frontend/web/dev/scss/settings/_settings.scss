@@ -1,0 +1,79 @@
+.settings-headline {
+    margin-bottom: 12px;
+    h1 {
+        float: left;
+        @include max-width-767 {
+            float: none;
+        }
+    }
+}
+
+.primary-button.send-invitation {
+    float: right;
+    margin-top: 20px;
+    text-decoration: none;
+    &:hover, &:focus {
+        color: $white;
+    }
+    @include max-width-767 {
+        float: left;
+        width: auto;
+        text-align: center;
+        margin: 0 0 24px 0;
+    }
+    @include max-width-425 {
+        width: 100%;
+    }
+}
+
+.change-email-wrapper, .change-vat-code-wrapper {
+    display: flex;
+    width: 100%;
+    .form-group {
+        width: 100%;
+    }
+}
+
+.change-vat-code-wrapper {
+    .input-group {
+        z-index: 1;
+    }
+}
+
+.how-to-change-email-input {
+    color: $disabledtext;
+}
+
+.how-to-change-icon {
+    position: relative;
+    margin: 37px 0 0 12px;
+    cursor: pointer;
+    &:hover, &:focus {
+        color: $treepoppy;
+    }
+}
+
+.primary-button.contact-admin {
+    margin: 33px 0 0 44px;
+    white-space: nowrap;
+    @include max-width-767 {
+        margin: 6px auto 24px;
+    }
+}
+
+.settings-save-btn {
+    margin-top: 24px;
+}
+
+.field-user-changeemail, .field-company-changevatcode {
+    textarea {
+        resize: vertical;
+    }
+}
+
+.contact-admin-wrapper {
+    display: flex;
+    @include max-width-767 {
+        flex-flow: row wrap;
+    }
+}

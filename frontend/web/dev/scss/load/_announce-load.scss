@@ -1,0 +1,142 @@
+.load-type-selection-container {
+    position: relative;
+    .select-any-load-type {
+        @include font-size(14);
+        color: $secondarytext;
+        font-weight: 700;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+}
+
+.load-type-selection {
+    display: flex;
+    align-items: center;
+    @include max-width-767 {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .radio {
+        float: left;
+        margin: 0px;
+        padding: 0 5px;
+        text-align: center;
+        width: 50%;
+        @include max-width-767 {
+            float: none;
+            padding: 5px 0;
+            width: 100%;
+        }
+        label {
+            @include font-size(14);
+        }
+    }
+    .radio + .radio {
+        margin-top: 0px;
+    }
+    input[type=radio] {
+        top: 3px;
+        @include max-width-767 {
+            top: 8px;
+        }
+    }
+}
+
+.field-load-type {
+    .help-block {
+        text-align: center;
+    }
+}
+
+.load-location-row {
+    .field-load-date, .field-load-price {
+        margin: 28px auto 5px auto;
+    }
+}
+
+.load-unload-city-container {
+    .help-block {
+        position: relative;
+    }
+}
+
+.select-few-cities {
+    @include font-size(13);
+    color: $primarytext;
+    font-weight: 500;
+}
+
+.field-loadcar-price, .field-load-price {
+    .input-group-addon {
+        @include font-size(14);
+        border-radius: 0px;
+        padding: 6px 8px;
+    }
+}
+
+.edit-load-car-model-container {
+    margin-top: 32px;
+}
+
+.load-car-model-item, .edit-load-car-model-item {
+    margin-bottom: 12px;
+    @include max-width-767 {
+        margin-bottom: 24px;
+    }
+}
+
+.remove-load-car-model {
+    @include font-size(20);
+    background-color: $flamingo;
+    border-radius: 0px;
+    border: none;
+    color: $white;
+    font-weight: 500;
+    height: 40px;
+    margin-top: 32px;
+    outline: 0;
+    width: 100%;
+    &:hover, &:focus {
+        background-color: $brickred;
+    }
+    @include max-width-767 {
+        margin-top: 10px;
+    }
+}
+
+.add-load-car-model {
+    color: $secondarytext;
+    margin-bottom: 16px;
+    transition: all 0.3s;
+    &:hover, &:focus {
+        color: $primarytext;
+    }
+}
+
+.field-loadcar-quantity, .field-loadcar-state {
+    &:after {
+        content: "\f0d7";
+        @include font-size(14);
+        font-family: $fontawesome;
+        color: $secondarytext;
+        pointer-events: none;
+        position: absolute;
+        top: 40px;
+        right: 26px;
+    }
+}
+
+.required-fields-explanation {
+    margin-top: 15px;
+    @include font-size(14);
+    color: $secondarytext;
+}
+
+.direction {
+    font-weight: 700;
+}
+
+span.free-announcement-per-week {
+    color: $yelloworange;
+    font-size: 14px;
+}

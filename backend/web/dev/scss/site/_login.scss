@@ -1,0 +1,59 @@
+.site-login {
+    @include max-height-500 {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+}
+
+.login-container {
+    background: $alabaster;
+    max-width: 420px;
+    min-height: 420px;
+    width: 100%;
+    padding: 30px;
+    box-shadow: 0px 1px 6px rgba(45, 15, 80, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.login-headline {
+    height: 80px;
+    color: $mineshaft;
+    text-align: center;
+    h1 {
+        font-weight: 600;
+        @include font-size(30);
+        margin-top: 10px;
+        line-height: 46px;
+        letter-spacing: 1.2px;
+    }
+}
+
+.site-logo-login {
+    width: 210px;
+}
+
+.logo-subtext {
+    font-family: $poppins;
+    font-weight: 600;
+    @include font-size(15);
+    color: $bigstone;
+}
+
+.login-content {
+    form {
+        width: 100%;
+        padding-top: 25px;
+    }
+}
+
+.primary-button.login-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-alert {
+    position: relative;
+    max-width: 420px;
+    width: 100%;
+}

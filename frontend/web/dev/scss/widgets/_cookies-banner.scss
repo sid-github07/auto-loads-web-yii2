@@ -1,0 +1,41 @@
+.cc_banner-wrapper {
+    .cc_banner {
+        @include font-size(14);
+        font-family: $opensans;
+        color: $secondarytext;        
+        .cc_btn {
+            background-color: $yelloworange;
+            border-radius: 0px;
+            color: $white;
+            font-weight: 600;
+            margin-left: 40px;
+            padding: 11px 10px;
+            text-decoration: none;
+            transition: all 0.3;
+            &:hover, &:focus {
+                background-color: $treepoppy;
+                color: $white;
+            }
+            @include min-width-1660 {
+                margin-top: 5px;
+            }
+            @include max-width-767 {
+                @include font-size(16);
+                margin-left: 20px;
+            }
+        }
+        .cc_message {
+            font-weight: normal;
+            line-height: 1.4rem;
+            margin-top: 0px;
+            padding-top: 1px;
+            text-align: justify;
+            @include min-width-1660 {
+                line-height: 45px;
+            }
+            @include max-width-767 {
+                @include font-size(16);
+            }
+        }
+    }
+}
